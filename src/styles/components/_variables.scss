@@ -1,0 +1,36 @@
+$trs1: .25s ease-out;
+$trs2: .5s ease-out;
+$trs3: 1s ease-out;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+$color-accent: #d51e28;
+
+$color-success: #f9fcf6;
+$color-success-border: #DCecca;
+
+$color-error: #fdf4f4;
+$color-error-border: #f3bfc1;
+
+$color-alert: #fff;
+$color-alert-border: #f3f3f3;
+
+$color-info: #e7f2ff;
+$color-info-border: #d4e6fd;
+
+
+@import "./bootstrap-4.5.2/functions";
+@import "./bootstrap-4.5.2/variables";
+@import "./bootstrap-4.5.2/mixins/breakpoints";

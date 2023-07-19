@@ -1,0 +1,23 @@
+extends layout/layout
+block content
+  include blocks/breadcrumbs
+  .container
+    section.section
+      h1 Подсказки
+      .row
+        .col-sm-auto.col-12
+          button.button.button_style-1.button_bordered.mb-2(data-alert='info') 1 ( info )
+        .col-sm-auto.col-12
+          button.button.button_style-1.button_bordered.mb-2(data-alert='alert') 1 ( alert )
+        .col-sm-auto.col-12
+          button.button.button_style-1.button_bordered.mb-2(data-alert='success') 1 ( success )
+        .col-sm-auto.col-12
+          button.button.button_style-1.button_bordered.mb-2(data-alert='error') 1 ( error )
+        .col-sm-auto.col-12
+          button.button.button_style-1.button_bordered.mb-2(data-message='info') 2 ( info )
+        .col-sm-auto.col-12
+          button.button.button_style-1.button_bordered.mb-2(data-message='alert') 2 ( alert )
+        .col-sm-auto.col-12
+          button.button.button_style-1.button_bordered.mb-2(data-message='success') 2 ( success )
+        .col-sm-auto.col-12
+          button.button.button_style-1.button_bordered.mb-2(data-message='error') 2 ( error )

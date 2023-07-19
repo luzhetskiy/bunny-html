@@ -1,0 +1,1157 @@
+extends layout/layout
+block content
+  include blocks/breadcrumbs
+  .container
+    section.section
+      .new-content.new-content-type-catalog
+        h1.new-content__title.section__title Купить вагинальные шарики и тренажеры
+        .new-content__left
+          .new-choice.new-content__choice
+            button.new-button.new-button-type-choice(data-action='filtersButton')
+              svg.new-choice__icon
+                use(xlink:href='#filterIcon')
+              span по параметрам
+            button.new-button.new-button-type-choice(data-action='toSortByButton')
+              svg.new-choice__icon
+                use(xlink:href='#filterIcon')
+              span по цене/наличию
+
+          .new-filters.new-content__filters(data-action='filtersWrapper')
+            .new-console.new-mobileMenu__console
+              button.new-header__close(data-action='filtersCloseButton')
+
+            .new-filters__top
+
+              .new-dropdown.new-header__dropdown.active(data-action='dropdown')
+                span.new-button.new-dropdown__button.new-dropdown__button-type-topFilter(data-action='dropdownButton')
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/')
+                    | Женское
+                .new-dropdown__wrapper.new-dropdown__wrapper-type-topFilter(data-action='dropdownWrapper')
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/') Для ролевых игр
+                  a.new-button.new-dropdown__link.third-child.active(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/shkolnicy/') Школьницы
+                  a.new-button.new-dropdown__link.third-child(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/medsestry/') Медсестры
+                  a.new-button.new-dropdown__link.third-child(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/policejskie/') Полицейские
+                  a.new-button.new-dropdown__link.third-child(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/sekretarshi/') Секретарши
+                  a.new-button.new-dropdown__link.third-child(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/styuardessy/') Стюардессы
+                  a.new-button.new-dropdown__link.third-child(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/gornichnye/') Горничные
+                  a.new-button.new-dropdown__link.third-child(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/novogodnie/') Новогодние
+                  a.new-button.new-dropdown__link.third-child(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/rabyni/') Рабыни
+                  a.new-button.new-dropdown__link.third-child(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/vedmochki/') Ведьмочки
+                  a.new-button.new-dropdown__link.third-child(href='/catalog/eroticheskoe-bele/zhenskoe/kostyumy-dlya-rolevyh-igr/drugie/') Другие
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/bolshie-razmery/') Большие размеры
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/kozhanoe-lakovoe-lateksnoe/') Кожаное, лаковое, латексное
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/mini-platya-i-sorochki/') Мини-платья и сорочки
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/penyuarykimono/') Пеньюары, кимоно
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/chulki-kolgoty-i-poyasa/') Чулки, колготы и пояса
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/byuste-i-korsety/') Бюстье и корсеты
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/trusiki/') Трусики
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/yubki/') Юбки
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/eroticheskie-komplekty/') Эротические комплекты
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/bodi-teddi-monokini/') Боди, тедди, монокини
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/chulki-na-telo/') Чулки на тело
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/perchatki-podvyazki/') Перчатки, подвязки
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/byustgaltery-topy/') Бюстгальтеры, топы
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/ukrasheniya-i-aksessuary/') Интимные украшения и аксессуары
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/zhenskoe/klubnye-platya/') Клубные платья
+              .new-dropdown.new-header__dropdown(data-action='dropdown')
+                span.new-button.new-dropdown__button.new-dropdown__button-type-topFilter(data-action='dropdownButton')
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/muzhskoe/')
+                    | Мужское
+                .new-dropdown__wrapper.new-dropdown__wrapper-type-topFilter(data-action='dropdownWrapper')
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/muzhskoe/kostyumy-dlya-rolevyh-igr/') Для ролевых игр
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/muzhskoe/kozhanoe-lakovoe-lateksnoe/') Кожаное, лаковое, латексное
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/muzhskoe/shorty-trusy/') Шорты, трусы
+                  a.new-button.new-dropdown__link(href='/catalog/eroticheskoe-bele/muzhskoe/majki/') Майки
+
+
+            .new-filters__bottom.product_filter
+              form#catalog_filter_form(action='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/')
+                fieldset.new-dropdown.new-filters__dropdown(data-action='dropdown')
+                  legend.new-button.new-dropdown__button.new-dropdown__button-type-bottomFilter.new-dropdown__button-action-open(data-action='dropdownButton')
+                    | Диаметр, см
+                  .new-dropdown__wrapper.new-dropdown__wrapper-type-bottomFilter.new-dropdown__wrapper-action-open(data-action='dropdownWrapper')
+                    .range
+                      .slider-margin
+                      p.new-range__value
+                        input#id_diametr-sm_0(type='text' name='diametr-sm_0' placeholder='1.50')
+                        span.new-range__divider
+                        input#id_diametr-sm_1(type='text' name='diametr-sm_1' placeholder='6.00')
+                fieldset.new-dropdown.new-filters__dropdown(data-action='dropdown')
+                  legend.new-button.new-dropdown__button.new-dropdown__button-type-bottomFilter(data-action='dropdownButton')
+                    | Материал
+                  .new-dropdown__wrapper.new-dropdown__wrapper-type-bottomFilter(data-action='dropdownWrapper')
+                    .checkbox-item
+                      label.label--checkbox(for='id_material_0')
+                        input#id_material_0.checkbox(type='checkbox' name='material' value='abs' choicesearch='false')
+                        |     ABS
+                    .checkbox-item
+                      label.label--checkbox(for='id_material_1')
+                        input#id_material_1.checkbox(type='checkbox' name='material' value='tpe' choicesearch='false')
+                        |     TPE
+                    .checkbox-item
+                      label.label--checkbox(for='id_material_2')
+                        input#id_material_2.checkbox(type='checkbox' name='material' value='metall' choicesearch='false')
+                        |     металл
+                    .checkbox-item
+                      label.label--checkbox(for='id_material_3')
+                        input#id_material_3.checkbox(type='checkbox' name='material' value='silikon' choicesearch='false')
+                        |     силикон
+                    .checkbox-item
+                      label.label--checkbox(for='id_material_4')
+                        input#id_material_4.checkbox(type='checkbox' name='material' value='steklo' choicesearch='false')
+                        |     стекло
+                fieldset.new-dropdown.new-filters__dropdown(data-action='dropdown')
+                  legend.new-button.new-dropdown__button.new-dropdown__button-type-bottomFilter(data-action='dropdownButton')
+                    | Цвет
+                  .new-dropdown__wrapper.new-dropdown__wrapper-type-bottomFilter(data-action='dropdownWrapper')
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_0')
+                        input#id_cvet_0.checkbox(type='checkbox' name='cvet' value='bezhevyij' choicesearch='false')
+                        |     бежевый
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_1')
+                        input#id_cvet_1.checkbox(type='checkbox' name='cvet' value='belyij' choicesearch='false')
+                        |     белый
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_2')
+                        input#id_cvet_2.checkbox(type='checkbox' name='cvet' value='goluboj' choicesearch='false')
+                        |     голубой
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_3')
+                        input#id_cvet_3.checkbox(type='checkbox' name='cvet' value='zelenyij' choicesearch='false')
+                        |     зеленый
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_4')
+                        input#id_cvet_4.checkbox(type='checkbox' name='cvet' value='zolotoj' choicesearch='false')
+                        |     золотой
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_5')
+                        input#id_cvet_5.checkbox(type='checkbox' name='cvet' value='krasnyij' choicesearch='false')
+                        |     красный
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_6')
+                        input#id_cvet_6.checkbox(type='checkbox' name='cvet' value='prozrachnyij' choicesearch='false')
+                        |     прозрачный
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_7')
+                        input#id_cvet_7.checkbox(type='checkbox' name='cvet' value='raznotsvetnyij' choicesearch='false')
+                        |     разноцветный
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_8')
+                        input#id_cvet_8.checkbox(type='checkbox' name='cvet' value='rozovyij' choicesearch='false')
+                        |     розовый
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_9')
+                        input#id_cvet_9.checkbox(type='checkbox' name='cvet' value='serebryanyij' choicesearch='false')
+                        |     серебряный
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_10')
+                        input#id_cvet_10.checkbox(type='checkbox' name='cvet' value='seryij' choicesearch='false')
+                        |     серый
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_11')
+                        input#id_cvet_11.checkbox(type='checkbox' name='cvet' value='sinij' choicesearch='false')
+                        |     синий
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_12')
+                        input#id_cvet_12.checkbox(type='checkbox' name='cvet' value='sirenevyij' choicesearch='false')
+                        |     сиреневый
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_13')
+                        input#id_cvet_13.checkbox(type='checkbox' name='cvet' value='fioletovyij' choicesearch='false')
+                        |     фиолетовый
+                    .checkbox-item
+                      label.label--checkbox(for='id_cvet_14')
+                        input#id_cvet_14.checkbox(type='checkbox' name='cvet' value='chyornyij' choicesearch='false')
+                        |     чёрный
+                fieldset.new-dropdown.new-filters__dropdown(data-action='dropdown')
+                  legend.new-button.new-dropdown__button.new-dropdown__button-type-bottomFilter(data-action='dropdownButton')
+                    | Бренд
+                  .new-dropdown__wrapper.new-dropdown__wrapper-type-bottomFilter(data-action='dropdownWrapper')
+                    .brand-filter
+                      .brand-filter-search
+                        input.checkbox-filter-search(type='text' placeholder='Поиск')
+                      div
+                        .brand-filter-checkbox
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_0')
+                              input#id_brend_0.checkbox(type='checkbox' name='brend' value='a-toys-rossiya' choicesearch='true')
+                              |     A-Toys, Россия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_1')
+                              input#id_brend_1.checkbox(type='checkbox' name='brend' value='baile-kitaj' choicesearch='true')
+                              |     Baile, Китай
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_2')
+                              input#id_brend_2.checkbox(type='checkbox' name='brend' value='california-exotic-ssha' choicesearch='true')
+                              |     California Exotic, США
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_3')
+                              input#id_brend_3.checkbox(type='checkbox' name='brend' value='cosmo-kitaj' choicesearch='true')
+                              |     Cosmo, Китай
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_4')
+                              input#id_brend_4.checkbox(type='checkbox' name='brend' value='doc-johnson-ssha' choicesearch='true')
+                              |     Doc Johnson, США
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_5')
+                              input#id_brend_5.checkbox(type='checkbox' name='brend' value='fifty-shades-angliya' choicesearch='true')
+                              |     Fifty Shades, Англия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_6')
+                              input#id_brend_6.checkbox(type='checkbox' name='brend' value='fun-factory-germaniya' choicesearch='true')
+                              |     Fun Factory, Германия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_7')
+                              input#id_brend_7.checkbox(type='checkbox' name='brend' value='fun-toys-velikobritaniya' choicesearch='true')
+                              |     Fun Toys, Великобритания
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_8')
+                              input#id_brend_8.checkbox(type='checkbox' name='brend' value='hot-avstriya' choicesearch='true')
+                              |     HOT, Австрия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_9')
+                              input#id_brend_9.checkbox(type='checkbox' name='brend' value='le-frivole-rossiya' choicesearch='true')
+                              |     Le Frivole, Россия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_10')
+                              input#id_brend_10.checkbox(type='checkbox' name='brend' value='lola-toys-rossiya' choicesearch='true')
+                              |     Lola Toys, Россия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_11')
+                              input#id_brend_11.checkbox(type='checkbox' name='brend' value='lovetoy-kanada' choicesearch='true')
+                              |     LoveToy, Канада
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_12')
+                              input#id_brend_12.checkbox(type='checkbox' name='brend' value='magic-motion-kitaj' choicesearch='true')
+                              |     Magic Motion, Китай
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_13')
+                              input#id_brend_13.checkbox(type='checkbox' name='brend' value='masculan-germaniya' choicesearch='true')
+                              |     Masculan, Германия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_14')
+                              input#id_brend_14.checkbox(type='checkbox' name='brend' value='ns-novelties-ssha' choicesearch='true')
+                              |     NS Novelties, США
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_15')
+                              input#id_brend_15.checkbox(type='checkbox' name='brend' value='ovo-germaniya' choicesearch='true')
+                              |     Ovo, Германия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_16')
+                              input#id_brend_16.checkbox(type='checkbox' name='brend' value='satisfyer-germaniya' choicesearch='true')
+                              |     Satisfyer, Германия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_17')
+                              input#id_brend_17.checkbox(type='checkbox' name='brend' value='seven-creations-kitaj' choicesearch='true')
+                              |     Seven Creations, Китай
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_18')
+                              input#id_brend_18.checkbox(type='checkbox' name='brend' value='sexus-glass-kitaj' choicesearch='true')
+                              |     Sexus Glass, Китай
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_19')
+                              input#id_brend_19.checkbox(type='checkbox' name='brend' value='shots-toys-niderlandyi' choicesearch='true')
+                              |     Shots Toys, Нидерланды
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_20')
+                              input#id_brend_20.checkbox(type='checkbox' name='brend' value='sitabella-rossiya' choicesearch='true')
+                              |     Sitabella, Россия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_21')
+                              input#id_brend_21.checkbox(type='checkbox' name='brend' value='svakom-ssha' choicesearch='true')
+                              |     Svakom, США
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_22')
+                              input#id_brend_22.checkbox(type='checkbox' name='brend' value='toyfa-rossiya' choicesearch='true')
+                              |     ToyFa, Россия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_23')
+                              input#id_brend_23.checkbox(type='checkbox' name='brend' value='white-label-kitaj' choicesearch='true')
+                              |     White Label, Китай
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_24')
+                              input#id_brend_24.checkbox(type='checkbox' name='brend' value='you2toys-germaniya' choicesearch='true')
+                              |     You2Toys, Германия
+                          .checkbox-item
+                            label.label--checkbox(for='id_brend_25')
+                              input#id_brend_25.checkbox(type='checkbox' name='brend' value='bioritm-rossiya' choicesearch='true')
+                              |     Биоритм, Россия
+                fieldset.new-dropdown.new-filters__dropdown.filter__item.filter__single-option
+                  .checkbox-item
+                    label.label--checkbox(for='id_smennyj-ves_0')
+                      input#id_smennyj-ves_0.checkbox(type='checkbox' name='smennyj-ves' value='da' choicesearch='false')
+                      |     Сменный вес да
+                fieldset.new-dropdown.new-filters__dropdown.filter__item.filter__single-option
+                  .checkbox-item
+                    label.label--checkbox(for='id_vibraciya_0')
+                      input#id_vibraciya_0.checkbox(type='checkbox' name='vibraciya' value='da' choicesearch='false')
+                      |     Вибрация да
+                fieldset.new-dropdown.new-filters__dropdown(data-action='dropdown')
+                  legend.new-button.new-dropdown__button.new-dropdown__button-type-bottomFilter.new-dropdown__button-action-open(data-action='dropdownButton')
+                    | Ценовой диапазон
+                  .new-dropdown__wrapper.new-dropdown__wrapper-type-bottomFilter.new-dropdown__wrapper-action-open(data-action='dropdownWrapper')
+                    .range
+                      .slider-margin
+                      p.new-range__value
+                        input#id_price_range_0(type='text' name='price_range_0' placeholder='0')
+                        span.new-range__divider
+                        input#id_price_range_1(type='text' name='price_range_1' placeholder='18690')
+                fieldset.filter__item
+                  button.new-button.new-button-type-fill.new-button.new-button-type-filters(type='submit')
+                    | Применить
+                a.new-button.new-button-type-empty.new-button-type-clear(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/')
+                  | Сбросить все
+                  | фильтры
+                a.filter_quick_results(href='#')
+                  i  
+                  | Показать
+                  span  
+
+          //Новые сортировки
+          .new-filters.new-content__filters.new-sort-filters(data-action='toSortByWrapper')
+            .new-console.new-mobileMenu__console
+              button.new-header__close(data-action='toSortByCloseButton')
+            .new-filters__bottom.product_filter
+              form#id(action='#')
+                fieldset.new-dropdown.new-filters__dropdown(data-action='dropdown')
+                  legend.new-button.new-dropdown__button.new-dropdown__button-type-bottomFilter.new-dropdown__button-action-open(data-action='dropdownButton')
+                    | Наличие
+                  .new-dropdown__wrapper.new-dropdown__wrapper-type-bottomFilter.new-dropdown__wrapper-action-open(data-action='dropdownWrapper')
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_1' value='#' checked)
+                        span все
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_1' value='#')
+                        span в наличии
+                
+                fieldset.new-dropdown.new-filters__dropdown(data-action='dropdown')
+                  legend.new-button.new-dropdown__button.new-dropdown__button-type-bottomFilter(data-action='dropdownButton')
+                    | Магазины
+                  .new-dropdown__wrapper.new-dropdown__wrapper-type-bottomFilter(data-action='dropdownWrapper')
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_2' value='#' checked)
+                        span Все магазины
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_2' value='#')
+                        span Ново-Вокз.
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_2' value='#')
+                        span Ленинградская
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_2' value='#')
+                        span Моск. шоссе
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_2' value='#')
+                        span Гагарина
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_2' value='#')
+                        span Авроры
+
+                fieldset.new-dropdown.new-filters__dropdown(data-action='dropdown')
+                  legend.new-button.new-dropdown__button.new-dropdown__button-type-bottomFilter(data-action='dropdownButton')
+                    | Тип
+                  .new-dropdown__wrapper.new-dropdown__wrapper-type-bottomFilter(data-action='dropdownWrapper')
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_3' value='#' checked)
+                        span все
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_3' value='#' checked)
+                        span со скидкой
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_3' value='#' checked)
+                        span популярное
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_3' value='#' checked)
+                        span новые
+
+                fieldset.new-dropdown.new-filters__dropdown(data-action='dropdown')
+                  legend.new-button.new-dropdown__button.new-dropdown__button-type-bottomFilter(data-action='dropdownButton')
+                    | По цене
+                  .new-dropdown__wrapper.new-dropdown__wrapper-type-bottomFilter(data-action='dropdownWrapper')
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_3' value='#' checked)
+                        span По возрастанию
+                    .checkbox-item
+                      label.radio-item
+                        input.radio(type='radio' name='test_radio_3' value='#' checked)
+                        span По убыванию
+                    
+                fieldset.filter__item
+                  button.new-button.new-button-type-fill.new-button.new-button-type-filters(type='submit')
+                    | Применить
+                a.new-button.new-button-type-empty.new-button-type-clear(href='#')
+                  | Сбросить все фильтры
+
+          //Мобильные результаты сортировок
+          .new-resault-items 
+            .new-resault-items__element 
+              span Материал:
+              span Значение
+            .new-resault-items__element 
+              span Цена:
+              span по возрастанию
+            .new-resault-items__element 
+              span Тип:
+              span новые
+              span старые
+              span современные
+
+        
+        .new-content__right
+        
+          .new-sort.new-content__sort(data-action='toSortByWrapper')
+            .new-console.new-mobileMenu__console
+              button.new-header__close(data-action='toSortByCloseButton')
+            .new-dropdown.new-sort__dropdown(data-action='dropdown')
+              button.new-button.new-dropdown__button.new-dropdown__button-type-sort(data-action='dropdownButton') Наличие
+              .new-dropdown__wrapper.new-dropdown__wrapper-type-sort(data-action='dropdownWrapper')
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?availability=all' data-action='dropdownСhanger') все
+                a.new-dropdown__link.new-dropdown__link-type-sort.new-dropdown__link-type-sortCurrent(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/' data-action='dropdownСhanger') в наличии
+            .new-dropdown.new-sort__dropdown(data-action='dropdown')
+              button.new-button.new-dropdown__button.new-dropdown__button-type-sort(data-action='dropdownButton') Магазины
+              .new-dropdown__wrapper.new-dropdown__wrapper-type-sort(data-action='dropdownWrapper')
+                a.new-dropdown__link.new-dropdown__link-type-sort.new-dropdown__link-type-sortCurrent(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/' data-action='dropdownСhanger') Все магазины
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?shops=1' data-action='dropdownСhanger') Ново-Вокз.
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?shops=2' data-action='dropdownСhanger') Ленинградская
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?shops=3' data-action='dropdownСhanger') Моск. шоссе
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?shops=4' data-action='dropdownСhanger') Гагарина
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?shops=6' data-action='dropdownСhanger') Авроры
+            .new-dropdown.new-sort__dropdown(data-action='dropdown')
+              button.new-button.new-dropdown__button.new-dropdown__button-type-sort(data-action='dropdownButton') Тип
+              .new-dropdown__wrapper.new-dropdown__wrapper-type-sort(data-action='dropdownWrapper')
+                a.new-dropdown__link.new-dropdown__link-type-sort.new-dropdown__link-type-sortCurrent(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/' data-action='dropdownСhanger') все
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?promo=discount' data-action='dropdownСhanger') со скидкой
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?promo=popular' data-action='dropdownСhanger') популярные
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?promo=new' data-action='dropdownСhanger') новые
+            .new-dropdown.new-sort__dropdown(data-action='dropdown')
+              button.new-button.new-dropdown__button.new-dropdown__button-type-sort(data-action='dropdownButton') Склад
+              .new-dropdown__wrapper.new-dropdown__wrapper-type-sort(data-action='dropdownWrapper')
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?store=all' data-action='dropdownСhanger') все
+                a.new-dropdown__link.new-dropdown__link-type-sort.new-dropdown__link-type-sortCurrent(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?store=samara' data-action='dropdownСhanger') в Самаре
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?store=moscow' data-action='dropdownСhanger') в Москве
+            .new-dropdown.new-sort__dropdown(data-action='dropdown')
+              button.new-button.new-dropdown__button.new-dropdown__button-type-sort(data-action='dropdownButton') По цене
+              .new-dropdown__wrapper.new-dropdown__wrapper-type-sort(data-action='dropdownWrapper')
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?ordering=asc' data-action='dropdownСhanger')
+                  span.new-dropdown__remark По возрастанию
+                  span.new-dropdown__remark.new-dropdown__remark-type-desktop
+                    | Цена
+                    svg.new-dropdown__icon.new-dropdown__icon-type-priceMax
+                      use(xlink:href='#priceMaxIcon')
+                a.new-dropdown__link.new-dropdown__link-type-sort(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?ordering=desc' data-action='dropdownСhanger')
+                  span.new-dropdown__remark По убыванию
+                  span.new-dropdown__remark.new-dropdown__remark-type-desktop
+                    | Цена
+                    svg.new-dropdown__icon.new-dropdown__icon-type-priceMin
+                      use(xlink:href='#priceMinIcon')
+          
+          
+          .new-content__catalog
+            .new-card.new-card-type-catalog
+              .new-card__labels
+                .new-card__label.new-card__label-type-sale
+                  span.new-card__fill -10%
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/194201/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/01/15/0115e6e60a742129f8815a67be873434.jpg' width='130' height='130' alt='CRYSTAL KEGEL EGGS')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-crystal-kegel-eggs--nsn-0703-14/' title='Перейти на страницу товара') CRYSTAL KEGEL EGGS
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price.new-card__price-type-old
+                    | 1 980
+                    span.new-card__currency ₽
+                  span.new-card__price
+                    | 1 782
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/194201/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation Шарики вагинальные из стекла розовые
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/5113566/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/97/8d/978d7294e3744537a6ff8f95c7aff4f8.jpg' width='130' height='130' alt='Вагинальные шарики Arrakis')
+              a.new-card__center(href='/catalog/product/shariki-kegelya-so-smeschennyim-tsentom--05531onesize/' title='Перейти на страницу товара') Вагинальные шарики Arrakis
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 090
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/5113566/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation Силиконовые вагинальные шарики со смещенным центром тяжести на сцепке, вес 57 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/10578956/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/e3/69/e3696a877069be40f5eb34155d5af79b.jpg' width='130' height='130' alt='Вагинальные шарики A-Toys Green')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-a-toys-by-toyfa--764016/' title='Перейти на страницу товара') Вагинальные шарики A-Toys Green
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 340
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/10578956/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Силиконовые вагинальные шарики на сцепке с ушками для дополнительной стимуляции, зеленые, 65 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/206951/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/16/6c/166c79a04e867c864cf9f01dd38f8bf3.jpg' width='130' height='130' alt='Вагинальные шарики A-Toys Keggel Balls')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-764001/' title='Перейти на страницу товара') Вагинальные шарики A-Toys Keggel Balls
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 190
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/206951/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Изысканные вагинальные шарики рельефной формы один имитирует бутон цветочка, а второй украшен листиками. диаметр-3,5 см, вес-70 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/10578957/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/ca/8a/ca8a765430c0e9beb3a8c633ecb9826b.jpg' width='130' height='130' alt='Вагинальные шарики A-Toys Violet')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-a-toys-by-toyfa--764013/' title='Перейти на страницу товара') Вагинальные шарики A-Toys Violet
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 230
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/10578957/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Силиконовые вагинальные шарики на сцепке с ушками для дополнительной стимуляции, вес 56 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+                .new-card__label.new-card__label-type-sale
+                  span.new-card__fill -15%
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/193312/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/82/60/826055e4b186ce45e687a4dd60aabddd.jpg' width='130' height='130' alt='Вагинальные шарики Beyond Aroused')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-beyond-aroused-smennyie--fs-52427/' title='Перейти на страницу товара') Вагинальные шарики Beyond Aroused
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price.new-card__price-type-old
+                    | 3 590
+                    span.new-card__currency ₽
+                  span.new-card__price
+                    | 3 051
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/193312/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Комплект из 4 шариков со мещенным центром тяжести разного цвета и веса, вес 15 гр, 25 гр, 35 гр, 55 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/214958/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/f2/6f/f26fa7fecc682c203d25ea28eeda1c63.jpg' width='130' height='130' alt='Вагинальные шарики BOBO mini Огонь')
+              a.new-card__center(href='/catalog/product/shariki-ogon-47175-1mm/' title='Перейти на страницу товара') Вагинальные шарики BOBO mini Огонь
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 640
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/214958/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Вагинальные шарики из стекла в силиконовой оплетке для тренировки влагалищных мышц, диаметр 3 см
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/9917727/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/bf/9e/bf9e4746d53b909001abd7110ce47b7d.jpg' width='130' height='130' alt='Вагинальные шарики Carmen Lavender Sunset')
+              a.new-card__center(href='/catalog/product/nabor-vaginalnyih-sharikov-love-story--3011-03lola/' title='Перейти на страницу товара') Вагинальные шарики Carmen Lavender Sunset
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 2 450
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/9917727/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Набор, включающий парные шарики на сцепке и одинарный шарик со смещенным центром тяжести, вес 44 гр, 73 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/9917728/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/ca/76/ca76f0818057dd2174ff164635d2da4c.jpg' width='130' height='130' alt='Вагинальные шарики Carmen Tea Rose')
+              a.new-card__center(href='/catalog/product/nabor-vaginalnyih-sharikov-love-story--3011-01lola/' title='Перейти на страницу товара') Вагинальные шарики Carmen Tea Rose
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 2 450
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/9917728/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Набор, включающий парные шарики на сцепке и одинарный шарик со смещенным центром тяжести, вес 44 гр, 73 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/9917729/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/78/f5/78f5cee14502914a3467b6749422ca0f.jpg' width='130' height='130' alt='Вагинальные шарики Carmen Wine Red')
+              a.new-card__center(href='/catalog/product/nabor-vaginalnyih-sharikov-love-story--3011-02lola/' title='Перейти на страницу товара') Вагинальные шарики Carmen Wine Red
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 2 450
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/9917729/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Набор, включающий парные шарики на сцепке и одинарный шарик со смещенным центром тяжести, вес 44 гр, 73 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/12406767/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/6e/3e/6e3e72adb30493060f9075bd0ce9bdbb.jpg' width='130' height='130' alt='Вагинальные шарики Chrystalino Ben Wa Small')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-iz-stekla-chrystalino--chr022blu/' title='Перейти на страницу товара') Вагинальные шарики Chrystalino Ben Wa Small
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 3 130
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/12406767/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Вагинальные шарики из стекла в силиконовой оплетке для тренировки мышц влагалища, вес 43 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/7621007/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/72/9d/729de8ff1e66a02bc8e290164b1eeba2.jpg' width='130' height='130' alt='Вагинальные шарики Climax Weighted Balls')
+              a.new-card__center(href='/catalog/product/metallicheskie-vaginalnyie-shariki-climax-weighted--se-1301-10-2/' title='Перейти на страницу товара') Вагинальные шарики Climax Weighted Balls
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 190
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/7621007/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Металлические вагинальные шарики для тренировки мышц влагалища без сцепки, вес каждого шарика 25 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/8508925/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/f5/7c/f57c51a4d4e8ab45b70ea400c2d09004.jpg' width='130' height='130' alt='Вагинальные шарики Cosmo')
+              a.new-card__center(href='/catalog/product/shariki-vaginalnyie-nabor-2---csm-23140/' title='Перейти на страницу товара') Вагинальные шарики Cosmo
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 2 590
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/8508925/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation Набор вагинальных шариков для тренировки интимных мышц, вес 40 гр и 80 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/11080901/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/30/4c/304cc3780a67c47adaad892bd0b5776e.jpg' width='130' height='130' alt='Вагинальные шарики Cosmo CSM-23002')
+              a.new-card__center(href='/catalog/product/shariki-vaginalnyie-tsvet-rozovyij-d--csm-23002/' title='Перейти на страницу товара') Вагинальные шарики Cosmo CSM-23002
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 240
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/11080901/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Вагинальные шарики фиолетового цвета со смещенным центром тяжести для тренировки мышц влагалища, 85 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/6086201/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/b0/5f/b05fb7cb2d9ae4b24f82c076f89c606f.jpg' width='130' height='130' alt='Вагинальные шарики Delta')
+              a.new-card__center(href='/catalog/product/shariki-kegelya-so-smeschennyim-tsentrom--05532onesize/' title='Перейти на страницу товара') Вагинальные шарики Delta
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 090
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/6086201/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Силиконовые вагинальные шарики на силиконовой сцепке со смещенным центром тяжести, вес 84 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/9917730/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/b7/54/b754f60c37f18c74c58103c8450e7622.jpg' width='130' height='130' alt='Вагинальные шарики Diva Lavender Sunset')
+              a.new-card__center(href='/catalog/product/nabor-vaginalnyih-sharikov-love-story--3012-03lola/' title='Перейти на страницу товара') Вагинальные шарики Diva Lavender Sunset
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 2 730
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/9917730/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Набор, включающий двойные шарики со смещенным центром тяжести и два одинарных шарика, вес 31 гр, 76 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/9917731/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/43/56/4356212aa7c0a01b01c0eebbbac76cb8.jpg' width='130' height='130' alt='Вагинальные шарики Diva Tea Rose')
+              a.new-card__center(href='/catalog/product/nabor-vaginalnyih-sharikov-love-story--3012-01lola/' title='Перейти на страницу товара') Вагинальные шарики Diva Tea Rose
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 2 730
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/9917731/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Набор, включающий двойные шарики со смещенным центром тяжести и два одинарных шарика, вес 31 гр, 76 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/12422846/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/0e/e6/0ee65615525dd819565c28b94042c99f.jpg' width='130' height='130' alt='Вагинальные шарики Easytoys Smal')
+              a.new-card__center(href='/catalog/product/dvojnyie-vaginalnyie-shariki-easytoys-et007pnk-t/' title='Перейти на страницу товара') Вагинальные шарики Easytoys Smal
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 980
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/12422846/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Силиконовые вагинальные шарики розового цвета со мещенным центром тяжести на сцепке, вес 61 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/883678/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/28/39/283955575a5bdd286c58e756679ec4c7.jpg' width='130' height='130' alt='Вагинальные шарики Emotions Lexy')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-bez-stsepki-emotions--4016-01lola/' title='Перейти на страницу товара') Вагинальные шарики Emotions Lexy
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 440
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/883678/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation Вагинальные шарики фиолетового цвета без сцепки, общий вес 150 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/883679/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/bb/dc/bbdc32833d4e83693e7aa9fb8589d7d8.jpg' width='130' height='130' alt='Вагинальные шарики Emotions Lexy Large')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-bez-stsepki-emotions--4016-03lola/' title='Перейти на страницу товара') Вагинальные шарики Emotions Lexy Large
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 440
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/883679/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation Вагинальные шарики без сцепки для укрепления вагинальных мышц, вес 150  гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/883677/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/3c/2a/3c2a18643f0ba8a1c344f0df52feb060.jpg' width='130' height='130' alt='Вагинальные шарики Emotions Lexy Large pink')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-bez-stsepki-emotions--4016-02lola/' title='Перейти на страницу товара') Вагинальные шарики Emotions Lexy Large pink
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 450
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/883677/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Утяжеленные вагинальные шарики без сцепки из силикона розового цвета, диаметр 3 см
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/883682/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/c2/0a/c20a6a5187c0ff13117c35f8f1a2c940.jpg' width='130' height='130' alt='Вагинальные шарики  Emotions Lexy Medium')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-bez-stsepki-emotions--4015-03lola/' title='Перейти на страницу товара') Вагинальные шарики  Emotions Lexy Medium
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 490
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/883682/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation Вагинальные шарики голубого цвета без сцепки, общий вес 106 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+                .new-card__label.new-card__label-type-sale
+                  span.new-card__fill -25%
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/7797621/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/b1/87/b187203844c170d9cf86a368a11f59de.jpg' width='130' height='130' alt='Вагинальные шарики Emotions Lexy Medium pink')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-emotions-lexy-medium--4015-02lola/' title='Перейти на страницу товара') Вагинальные шарики Emotions Lexy Medium pink
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price.new-card__price-type-old
+                    | 1 230
+                    span.new-card__currency ₽
+                  span.new-card__price
+                    | 922
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/7797621/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Силиконовые вагинальные шарики для тренировки мышц влагалища без сцепки, вес каждого 53 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/883681/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/73/24/73240ac2227ce184690e3f2d2a896da6.jpg' width='130' height='130' alt='Вагинальные шарики Emotions Lexy Medium purple')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-bez-stsepki-emotions--4015-01lola/' title='Перейти на страницу товара') Вагинальные шарики Emotions Lexy Medium purple
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 230
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/883681/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Утяжеленные вагинальные шарики без сцепки из силикона фиолетового цвета, вес-106 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/883684/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/42/21/4221ff8f84a8ff016249622e0ad101ff.jpg' width='130' height='130' alt='Вагинальные шарики Emotions Lexy Small')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-bez-stsepki-emotions--4014-01lola/' title='Перейти на страницу товара') Вагинальные шарики Emotions Lexy Small
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 980
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/883684/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation Вагинальные шарики без сцепки для укрепления вагинальных мышц, вес 68 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/883683/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/08/75/087553cf46e7dd48ed124d5a6a5e8d5d.jpg' width='130' height='130' alt='Вагинальные Шарики Emotions Lexy Small')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-bez-stsepki-emotions--4014-02lola/' title='Перейти на страницу товара') Вагинальные Шарики Emotions Lexy Small
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 980
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/883683/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Силиконовые вагинальные шарики розового цвета без сцепки, диаметр- 2,5 см., вес- 66 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/883685/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/9d/7a/9d7a5adf9fe7ac4fcfd4d47856030836.jpg' width='130' height='130' alt='Вагинальные шарики Emotions Lexy Small turquoise')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-bez-stsepki-emotions--4014-03lola/' title='Перейти на страницу товара') Вагинальные шарики Emotions Lexy Small turquoise
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 990
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/883685/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation Утяжеленные вагинальные шарики без сцепки из силикона голубого цвета, вес-73 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/210767/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/f6/52/f652ae48396c9d18d2aa60414a6155ca.jpg' width='130' height='130' alt='Вагинальные шарики Fun Toys Geisha Balls 2')
+              a.new-card__center(href='/catalog/product/fun-toys-geisha-balls-2-15825/' title='Перейти на страницу товара') Вагинальные шарики Fun Toys Geisha Balls 2
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 2 590
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/210767/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Комплект из 4 шариков со мещенным центром тяжести разного цвета и веса, вес 24 гр, 34 гр, 44 гр, 56 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/5618547/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/d0/97/d0972341d31fb3d884284584c1039626.jpg' width='130' height='130' alt='Вагинальные шарики Large Glass Eggs')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-crystal-kegel-eggs--0703-27nsn/' title='Перейти на страницу товара') Вагинальные шарики Large Glass Eggs
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 2 190
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/5618547/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Стеклянные вагинальные шарики в форме яиц для треноировки мышц влагалища, вес 140 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/214988/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/85/57/8557ee25c0603a12561f3c3351bf0df1.jpg' width='130' height='130' alt='Вагинальные шарики Love Story Fleur-de-lisa Sweet Kiss')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-love-story-fleur-de-lisa--3006-01lola/' title='Перейти на страницу товара') Вагинальные шарики Love Story Fleur-de-lisa Sweet Kiss
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 480
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/214988/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation Вагинальные шарики увеличенного размера, подойдут для начинающих 
+            .new-card.new-card-type-catalog
+              .new-card__labels
+                .new-card__label.new-card__label-type-sale
+                  span.new-card__fill -10%
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/2712016/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/5e/95/5e95664acf95752652abe58de207cd64.jpg' width='130' height='130' alt='Вагинальные шарики Love Story Lavender Sunset')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-love-story-empress--3008-01lola/' title='Перейти на страницу товара') Вагинальные шарики Love Story Lavender Sunset
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price.new-card__price-type-old
+                    | 1 590
+                    span.new-card__currency ₽
+                  span.new-card__price
+                    | 1 431
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/2712016/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation Миниатюрные силиконовые вагинальные шарики на сцепке, вес-68 гр
+            .new-card.new-card-type-catalog
+              .new-card__labels
+              .new-card__top(title='Прeдпросмотр товара' data-action='fastBuyArea' data-preview-url='/catalog/product-preview/212316/')
+                svg.new-phone__icon.new-phone__icon-type-loop
+                  use(xlink:href='#loopIcon')
+                picture
+                  img.new-card__img(src='/media/cache/6b/99/6b99a55d4fbdd5aa7582ab838eb99579.jpg' width='130' height='130' alt='Вагинальные шарики Love Story Sky Blue')
+              a.new-card__center(href='/catalog/product/vaginalnyie-shariki-love-story-one--3004-04lola/' title='Перейти на страницу товара') Вагинальные шарики Love Story Sky Blue
+              p.new-card__bottom(data-action='buyButtonShell')
+                span.new-card__priceBlock
+                  span.new-card__price
+                    | 1 230
+                    span.new-card__currency ₽
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/212316/' data-action='buyButton')
+                  svg.new-tabs__icon.new-tabs__icon-type-cart
+                    use(xlink:href='#cartIcon')
+                  |               Купить
+              p.new-card__explanation
+                | Силиконовые вагинальные шарики со смещенным центром тяжести на силиконовой сцепке, вес-94 гр
+          .new-content__paging
+            p.new-content__pagination.new-pagination
+              a.new-pagination__link.new-pagination__link-type-current(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/') 1
+              a.new-pagination__link(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?page=2') 2
+              a.new-pagination__link(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?page=3') 3
+              a.new-pagination__link.new-pagination__link-type-forward(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?page=2')
+              a.new-pagination__link.new-pagination__link-type-front(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?page=3')
+            p.new-content__pageCount.new-pageCount
+              span.new-pageCount__text Показать:
+              span.new-pageCount__shell
+                a.new-pageCount__cell(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?perpage=16') 16
+                a.new-pageCount__cell.new-pageCount__cell-type-current(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?perpage=32') 32
+                a.new-pageCount__cell(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/?perpage=64') 64
+      section.new-why.new-why-type-standart
+        p
+          | Натренированные мышцы влагалища - важная составляющая интимной жизни пары. Даже врачи утверждают, что ощущения от полового акта остаются яркими, только если мышцы в «нужных» местах в тонусе. Что же делать, чтобы сохранить чувственность? На самом деле все просто – регулярно выполнять упражнения Кегеля и купить вагинальные шарики!
+        h2 Тренировки или наслаждение?
+        p
+          | Вагинальные шарики были известны еще в древние времена. С помощью похожих приспособлений наложницы древних государств учились управлять своим лоном и доставлять дополнительное удовольствие мужчинам. Регулярные тренировки давали возможность ублажить господина и защищали от неприятных старческих недугов – недержания мочи, выпадения органов малого таза и так далее.
+        p
+          | Через столетия исследования американского ученого Арнольда Кегеля подтвердили догадки – постоянные тренировки влагалищных мышц помогают не только сохранить здоровье, но и получить максимальное наслаждение.
+        p
+          | Удивительно, но с помощью небольшого тренажера, состоящего из двух-трех связанных шариков можно научиться делать партнеру массаж пениса только путем сокращения мышц влагалища. Сама женщина тоже не остается без приятного бонуса: во время сокращения кровь приливает к области таза, возбуждение приходит быстрее, а оргазм становиться более сильным.
+        p
+          | Вагинальные тренажеры часто используют во время прелюдии к сексу, а также во время мастурбации. Современные модели без проблем подключаются к смартфонам и управляются на расстоянии, что только усиливает желание.
+        h3  Виды и способы использования
+        p
+          | В магазине интим-товаров «Влюбленный Кролик» можно приобрести различные виды вагинальных шариков для здоровья и удовольствия. Тренажеры часто совмещают в себе полезную и приятную функции и различаются по следующим характеристикам:
+        ul
+          li
+            | Материал изготовления: силикон, металл, стекло, а также специальный пластик или даже киберкожа. Вариантов множество, главное выбрать наиболее подходящий для своего тела и степени владения мышцами;
+          li
+            | Размер шариков. Диаметр варьируется от полутора до пяти сантиметров, причем новичкам рекомендуют выбирать самые большие.
+          li
+            | Наличие шнурка. «Хвостик» совсем не нужен тем, кто уже продвинулся в тренировках. Женщина, которая может управлять своими мышцами, вытолкнет шарик без проблем, а вот неопытным лучше дергать за шнурок;
+          li
+            | Вибрация – приятный бонус для женщин, которые желают еще и получить удовольствие. Это отличная модель для самоудовлетворения при отсутствии постоянного партнера. Такие шарики часто имеют пульт управления или с помощью специальной программы подключаются к смартфону.
+        p
+          | Цена вагинальных шариков часто зависит от материала, ведь самый обычный тренажер из двух шаров и тканевой нитки стоит совсем недорого, но и продезинфицировать такой аксессуар довольно нелегко. Стоимость силиконовых шариков выше, но ухаживать за ними проще, а прослужат они намного дольше.
+        p
+          | Использовать вагинальный тренажер совсем не трудно. Главное правило – вводить шарики можно только со специальной смазкой. Первое время будет довольно сложно не только удерживать их во влагалище, но и даже найти удобное расположение. Оптимальное время для ежедневных тренировок – около 2 часов. Упражнения можно выполнять и лежа, но лучше ходить или даже бегать, то есть заставлять мышцы напрягаться непроизвольно.
+        p
+          | Обработку тренажера нужно проводить каждый раз перед использованием и поле него. Это можно делать с помощью мыльного раствора либо обычного антисептика, к примеру, хлоргексидина или мирамистина.
+      section.new-recommend.new-recommend-type-desktop.new-recommend-type-catalog
+        h2.new-recommend__title Рекомендуем
+        .new-recommend__shell
+          a.new-recommend__cell(href='/catalog/seks-igrushki/dlya-zhenshin/vakuumnye-stimulyatory/')
+            span.new-recommend__frame
+              svg.new-recommend__icon.new-recommend__icon-type-vakum
+                use(xlink:href='#vakumIcon')
+            |  Вакуумные стимуляторы
+          a.new-recommend__cell(href='/catalog/seks-igrushki/dlya-dvoih/vibratory-dlya-par/')
+            span.new-recommend__frame
+              svg.new-recommend__icon.new-recommend__icon-type-vibro
+                use(xlink:href='#vibroIcon')
+            |  Вибраторы для пар
+          a.new-recommend__cell(href='/catalog/intimnaya-kosmetika/prezervativy/?brend=okamoto-yaponiya&brend=sagami-yaponiya')
+            span.new-recommend__frame
+              svg.new-recommend__icon.new-recommend__icon-type-japan
+                use(xlink:href='#japanCondonsIcon')
+            |  Японские презервативы
+          a.new-recommend__cell(href='/catalog/intimnaya-kosmetika/smazki/')
+            span.new-recommend__frame
+              svg.new-recommend__icon.new-recommend__icon-type-lubricant
+                use(xlink:href='#lubricantIcon')
+            |  Лубриканты
+          a.new-recommend__cell(href='/catalog/seks-igrushki/dlya-muzhchin/vaginy-i-masturbatory/')
+            span.new-recommend__frame
+              svg.new-recommend__icon.new-recommend__icon-type-stimulants
+                use(xlink:href='#manStimulantsIcon')
+            |  Стимуляторы для мужчин
+          a.new-recommend__cell(href='/catalog/seks-igrushki/dlya-zhenshin/vaginalnye-shariki-i-trenazhery/')
+            span.new-recommend__frame
+              svg.new-recommend__icon.new-recommend__icon-type-vaginal
+                use(xlink:href='#vaginalBallsIcon')
+            |  Вагинальные шарики

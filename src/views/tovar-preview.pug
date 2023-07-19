@@ -1,0 +1,86 @@
+extends layout/layout
+block variables
+  -var header_banner = false
+block content
+
+  .nfastBuy-type-callbackew-fastBuy.new-card__fastBuy.new-card__fastBuy-action-open(data-action='fastBuyShell')
+    .new-fastBuy__overflow(data-action='fastBuyCloseButton')
+    .new-fastBuy__wrapper
+      .new-console.new-mobileMenu__console.new-console-type-fastBuy
+        button.new-header__close.new-header__close-type-fastBuy(data-action='fastBuyCloseButton')
+        p.new-fastBuy__look Предпросмотр
+
+      //просто часть карточки
+      .product-section.row
+        .product-section__images.col-lg-5.col-md-6
+          .product-slider-wrap
+            .card-labels
+              span.card-label.card-label_new new
+              span.card-label.card-label_star 
+                svg.icon
+                  use(xlink:href='#whiteStarIcon')
+              span.card-label.card-label_discount -30%
+            //главный слайдер
+            .slider.product-slider
+              mixin slide(href)
+                //slide
+                .product-slider__slide.image.image_contain
+                  img(data-lazy=href alt="image")
+              +slide('https://bunnylove.ru/media/cache/da/50/da50df2f0498cce56b4f4cade553cc8c.jpg')
+              +slide('https://bunnylove.ru/media/cache/3b/20/3b20ab2fc9789ec5c5af57ce34851ce6.jpg')
+              +slide('https://bunnylove.ru/media/cache/21/20/2120fe6a7bebb0042406a7b088f69bb5.jpg')
+              
+          //навигационный слайдер
+          .slider.product-nav-slider
+            mixin slide2(href)
+              //slide
+              .product-nav-slider__slide
+                .image.image_contain
+                  img(data-lazy=href alt="image")
+            +slide2('https://bunnylove.ru/media/cache/da/50/da50df2f0498cce56b4f4cade553cc8c.jpg')
+            +slide2('https://bunnylove.ru/media/cache/3b/20/3b20ab2fc9789ec5c5af57ce34851ce6.jpg')
+            +slide2('https://bunnylove.ru/media/cache/21/20/2120fe6a7bebb0042406a7b088f69bb5.jpg')
+        //content
+        .product-section__description.col-lg-7.col-md-6
+          .product-section__text
+            h6 Ярко-розовый вакуумный стимулятор клитора Ford
+            p Силиконовая рельефная анальная пробка с удобным для ношения ограничителем, диаметр 3,2 см
+            span.product-section__art-value Артикул: SEM-55196
+            .product-section__info-labels
+              .product-info-label.product-section__info-label
+                img(src=href+"/img/dam-pack.svg", alt="ico")
+              .product-info-label.product-section__info-label
+                img(src=href+"/img/exp-date.svg", alt="ico")
+              .product-availability-label.product-availability-label_true.product-section__info-label
+                img(src=href+"/img/check.svg", alt="ico")
+                span В наличии на складе в Москве
+            
+                ul.product-availability-label__list
+                  li.product-availability-label__item Ново-вокзальная, 146а
+                  li.product-availability-label__item Гагарина, 48 
+                  li.product-availability-label__item Московскоше шоссе, Лит.В<br> Московскоше шоссе, Лит.a
+                  li.product-availability-label__item Авроры, 199
+
+            .product-section__pricing
+              span.product-section__price-label Цена:
+              span.product-section__old-price 5&nbsp;600 P
+              span.product-section__price 6&nbsp;600 P
+            .product-section__buttons
+              a(href="#").button.button_style-1.button_rounded.product-section__buttons-item
+                svg.icon
+                  use(xlink:href='#cart')
+                span Купить
+              a(href="#").button.button_style-3.button_rounded.button_icon.product-section__buttons-item
+                svg.icon
+                  use(xlink:href='#menuHeartIcon')
+              a(href="#").button.button_style-3.button_rounded.button_icon.product-section__buttons-item
+                svg.icon
+                  use(xlink:href='#compareIcon')
+            a(href="#").product-section__more-link Подробнее о товаре
+            .product-section__message
+              svg.icon
+                use(xlink:href='#wallet')
+              span  
+                a(href="#") Зарегистрируйтесь 
+                | и получите 500 бонусных рублей за регистрацию и 238 бонусных рублей за покупку
+      
