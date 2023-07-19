@@ -23,7 +23,9 @@ block content
                   .cart-table-col
                     span.cart-thumb__image
                       a(href='/catalog/product/masturbator-svakom-ice-cream-egg-ssmc-02t/')
-                        img(src='/media/cache/43/29/43291a5a7cfaa70268e99590a8984c70.jpg' alt='Мастурбатор Svakom Hedy Ice-cream Pink')
+                      picture 
+                        source(srcset="http://bunnylove.fancymedia.ru/media/cache/a0/4c/a04ca53046bc8aca52ac9f0b1141347f.webp" type="image/webp")
+                        img(src='/media/cache/a0/4c/a04ca53046bc8aca52ac9f0b1141347f.webp' alt='Мастурбатор Svakom Hedy Ice-cream Pink')
                   .cart-table-col
                     .cart-table__product-info
                       a(href='/catalog/product/masturbator-svakom-ice-cream-egg-ssmc-02t/')
@@ -72,6 +74,39 @@ block content
                       strong 690 ₽
                   .cart-table-col.cart-table-col--remove
                     a.delete(href='/catalog/cart/del/219889/')
+                .cart-table-row.cart-table-row--head.packaging
+                    .packaging-text
+                      strong Заберите товары в красивой упаковке:
+                .cart-table-row
+                  .cart-table-col.mobile-hide
+                    a(href="/catalog/product/korobka-present-5-7153031-5/") 7153031-5
+                  .cart-table-col
+                    span.cart-thumb__image
+                        a(href='/catalog/product/korobka-with-love-3122692/')
+                        picture 
+                          source(srcset="https://bunnylove.ru/media/cache/0d/46/0d465ecb157db494c98f6df9197d4465.webp")
+                          img(src="https://bunnylove.ru/media/cache/0d/46/0d465ecb157db494c98f6df9197d4465.webp" alt="Коробка With love")
+                  .cart-table-col
+                    .cart-table__product-info
+                      a(href='/catalog/product/masturbator-svakom-ice-cream-egg-ssmc-02t/')
+                        .cart-thumb__title Коробка With love
+                      span.artikul-mobile
+                        | Артикул 
+                        a(href='/catalog/product/masturbator-svakom-ice-cream-egg-ssmc-02t/') SSMC-02T
+                      .cart-thumb__category
+                        | Складная подарочная коробка с надписью With Love, 16 x 23 x 7.5см
+                      .store-stock
+                        span.store-stock__title  В наличии:
+                        .store-stock__content
+                          span.store-stock__item
+                            a(href='/contacts/') Пр.Металлургов, 81
+                            | ,
+                          span.store-stock__item
+                            a(href='/contacts/') Гагарина, 48
+                  .cart-table-col.col-center
+                    span.cart-product-price 100 ₽
+                  .cart-table-col.col-center
+                    input(class="submit" type='submit' value='+ Добавить')
             .bonus-wrap
               form#discount_form(method='post' action='#discount_form')
                 input(type='hidden' name='csrfmiddlewaretoken' value='zZBe7F4kcq2oqJ2PZNQad97immNZSTjJ4dZ7om7Ba3zUJG2XfxtCsrFAWFustH5p')

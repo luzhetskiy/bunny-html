@@ -24,7 +24,7 @@ function headerTabs() {
             $(this).parent().parent().parent().find('[data-action="tabContent"]').removeClass('new-tabs__cell-action-open').eq($(this).parent().index() - 1).addClass('new-tabs__cell-action-open');
         });
     } else {
-        $('[data-action="tab1"]').each(function() {
+        $('[data-action="tab1"]').each(function () {
             var $this = $(this),
                 tabContent = $this.parent().parent().parent().find('[data-action="tabContent"]').eq($this.parent().index() - 1).html();
             rootCategorySlug = $this.data('root-category-slug');
@@ -32,21 +32,21 @@ function headerTabs() {
                 $this.parent().append('<div class="new-tabs__cell-type-alternative ' +
                     rootCategorySlug + '" data-action="tabLinkContent">' + tabContent + '</div>');
             }
-            $this.on('mouseenter', function() {
+            $this.on('mouseenter', function () {
                 var tabLinkContent = $this.parent().find('[data-action="tabLinkContent"]'),
                     totalWidth = 0;
 
                 tabLinkContent.children().each(function () {
-                    totalWidth = totalWidth + $(this).outerWidth()+1;
+                    totalWidth = totalWidth + $(this).outerWidth() + 1;
                 });
-                tabLinkContent.css({'width': totalWidth});
+                tabLinkContent.css({ 'width': totalWidth });
             })
         })
     }
 }
 
 headerTabs();
-$(window).resize(function() {
+$(window).resize(function () {
     headerTabs();
 })
 
@@ -76,7 +76,7 @@ $(document).ready(function () {
             cnt_class = 'new-dropdown__wrapper-action-open',
             $parent = $this.closest('[data-action="dropdown"]'),
             $content = $parent.find('[data-action="dropdownWrapper"]').eq(0),
-            $siblings = $parent.closest('.new-dropdown__wrapper').length?$parent.closest('.new-dropdown__wrapper').find('[data-action="dropdown"]').not($parent):$parent.siblings(),
+            $siblings = $parent.closest('.new-dropdown__wrapper').length ? $parent.closest('.new-dropdown__wrapper').find('[data-action="dropdown"]').not($parent) : $parent.siblings(),
             $siblings_button = $siblings.find('[data-action="dropdownButton"]'),
             $siblings_content = $siblings.find('[data-action="dropdownWrapper"]');
 
@@ -172,7 +172,7 @@ $(document).ready(function () {
         $('[data-action="cityShell"]').toggleClass('new-card__fastBuy-action-open');
         $('[data-action="cityChoice"]').hide();
     })
-    
+
     $('[data-action="mobileCityButton"]').click(function () {
         $('[data-action="mobileCityShell"]').toggleClass('new-city-action-open');
     })
@@ -284,16 +284,16 @@ $(document).ready(function () {
         slidesToScroll: 1,
         infinite: true,
         responsive: [{
-                breakpoint: 768
-            },
-            {
-                breakpoint: 1179,
-                settings: {
-                    infinite: true,
-                    autoplay: true,
-                    autoplaySpeed: 5000
-                }
+            breakpoint: 768
+        },
+        {
+            breakpoint: 1179,
+            settings: {
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 5000
             }
+        }
         ]
     });
 
@@ -309,18 +309,18 @@ $(document).ready(function () {
         slidesToScroll: 1,
         infinite: false,
         responsive: [{
-                breakpoint: 580,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 790,
-                settings: {
-                    slidesToShow: 3,
-                    dots: false
-                }
-            },
+            breakpoint: 580,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 790,
+            settings: {
+                slidesToShow: 3,
+                dots: false
+            }
+        },
         ]
     });
 
@@ -336,12 +336,12 @@ $(document).ready(function () {
         slidesToScroll: 1,
         infinite: false,
         responsive: [{
-                breakpoint: 768
-            },
-            {
-                breakpoint: 1024,
-                settings: 'unslick'
-            }
+            breakpoint: 768
+        },
+        {
+            breakpoint: 1024,
+            settings: 'unslick'
+        }
         ]
     };
     const sl = $('[data-action="partnerSlider"]').slick(settings);
@@ -390,42 +390,42 @@ $(document).ready(function () {
             slidesToScroll: 1,
             infinite: false,
             responsive: [{
-                    breakpoint: 420,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 620,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 719,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                },
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        arrows: false
-                    }
-                },
+                breakpoint: 420,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 620,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 719,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false
+                }
+            },
             ]
         }).on('breakpoint', function (event, slick, currentSlide, nextSlide, direction) {
             $(this).find('[data-action="trLead"]').height('auto');
@@ -493,21 +493,21 @@ function initSlickForPreview() {
         infinite: false,
         asNavFor: '[data-action="fastBuyThumbs"]',
         responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 1170,
-                settings: {
-                    infinite: true,
-                    autoplay: true,
-                    autoplaySpeed: 5000,
-                    pauseOnHover: true
-                }
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
+        },
+        {
+            breakpoint: 1170,
+            settings: {
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                pauseOnHover: true
+            }
+        }
         ]
     });
     $('[data-action="fastBuyThumbs"]').slick({
@@ -527,8 +527,14 @@ function initSlickForPreview() {
         }]
     });
 }
-
-
+//cлайдер тизера товара
+    $('.one-time').slick({
+        dots: true,
+        infinite:false,
+        arrows:false,
+        speed: 300,
+        slidesToShow: 1,
+    });
 function initBuyButtons() {
     //Кнопка покупки
     // $('[data-action="buyButton"]').click(function() {

@@ -2,13 +2,12 @@ var gulp = require("gulp"),
     browsersync = require("browser-sync").create(),
     autoprefixer = require("gulp-autoprefixer"),
     pug = require('gulp-pug'),
-    babel = require('gulp-babel'),
-    sass = require("gulp-sass"),
-    mincss = require("gulp-clean-css"),
+    babel = require('gulp-babel');
+    const sass = require('gulp-sass')(require('sass'));
+    var mincss = require("gulp-clean-css"),
     sourcemaps = require("gulp-sourcemaps"),
     rename = require("gulp-rename"),
     typograf = require('gulp-typograf'),
-    favicons = require("gulp-favicons"),
     newer = require("gulp-newer"),
     watch = require("gulp-watch"),
     clean = require("gulp-clean"),
@@ -31,8 +30,6 @@ let $images = ["./src/img/**/*.{jpg,jpeg,png,gif}", "!./src/img/favicons/*.{jpg,
 
     $styles = ["./src/styles/**/*.scss", "!./src/styles/components/**/*.scss"],
     $styles_watch = "./src/styles/**/*.scss",
-
-    $favicons = "./src/img/favicons/*.{jpg,jpeg,png,gif}"
 
     $other = ["./src/**/*", 
               "!./src/img/**/*.{jpg,jpeg,png,gif}", 
@@ -131,24 +128,6 @@ gulp.task("images", function () {
     .on("end", browsersync.reload);
 });
 
-gulp.task("favicons", function () {
-  return gulp.src($favicons)
-    .pipe(favicons({
-      icons: {
-        appleIcon: true,
-        favicons: true,
-        online: false,
-        appleStartup: false,
-        android: false,
-        firefox: false,
-        yandex: false,
-        windows: false,
-        coast: false
-      }
-    }))
-    .pipe(gulp.dest("./build/img/favicons/"))
-});
-
 gulp.task("other", function () {
   return gulp.src($other)
     .pipe(gulp.dest("./build/"))
@@ -180,7 +159,6 @@ gulp.task("watch", function () {
     watch($scripts_watch, gulp.series("scripts"));
     watch($webpackWatch, gulp.series("webpackScripts"));
     watch($images_watch, gulp.series("images"));
-    watch($favicons, gulp.series("favicons"));
     watch($other, gulp.series("other"));
     res();
   });
@@ -189,7 +167,7 @@ gulp.task("watch", function () {
 gulp.task("default", 
   gulp.series(
     "clean",
-    gulp.parallel("pug", "styles", "scripts", "webpackScripts", "images", "favicons", "other"),
+    gulp.parallel("pug", "styles", "scripts", "webpackScripts", "images", "other"),
     gulp.parallel("watch", "serve")
   )
 );
