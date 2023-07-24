@@ -17336,12 +17336,12 @@ div.fancy-select ul.options li.hover {
   padding-left: 20px;
 }
 
-/* 
- * Scroller v3.1.2 - 2014-12-08 
- * A jQuery plugin for replacing default browser scrollbars. Part of the Formstone Library. 
- * http://formstone.it/scroller/ 
- * 
- * Copyright 2014 Ben Plum; MIT Licensed 
+/*
+ * Scroller v3.1.2 - 2014-12-08
+ * A jQuery plugin for replacing default browser scrollbars. Part of the Formstone Library.
+ * http://formstone.it/scroller/
+ *
+ * Copyright 2014 Ben Plum; MIT Licensed
  */
 /* line 11202, ../sass/css.scss */
 .scroller {
@@ -32066,7 +32066,7 @@ textarea.input {
 input.submit[type=submit] {
   width: 110px;
   border: 1px solid #e0e0e0;
-  padding: 0 10px 0px 10px;
+  padding: 0 10px 0 10px;
   color: #d02a2e;
   border-radius: 16px;
   transition: background-color, border-color 0.3s ease-in;
@@ -32077,6 +32077,27 @@ input.submit[type=submit] {
   background-size: 18px auto !important;
   margin-left: 5px;
   background-position: 8px center !important;
+}
+
+a.submit-package {
+  display: inline-block;
+  width: 110px;
+  border: 1px solid #e0e0e0;
+  padding: 0 10px 0 10px;
+  color: #d02a2e;
+  border-radius: 16px;
+  transition: background-color, border-color 0.3s ease-in;
+  height: 35px;
+  line-height: 25px;
+  text-transform: capitalize;
+  background-size: 18px auto !important;
+  margin-left: 5px;
+  background-position: 8px center !important;
+}
+
+a.submit-package span {
+  display: block;
+  margin-top: 4px;
 }
 
 input.submit[type=submit]:hover {
