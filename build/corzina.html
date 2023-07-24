@@ -536,7 +536,7 @@
                       </div>
                       <div class="cart-table-col col-center"><span class="cart-product-price">100 ₽</span></div>
                       <div class="cart-table-col col-center">
-                        <input class="submit" type="submit" value="+ Добавить">
+                        <a class="submit-package" href="{% url 'catalog:add_package_to_cart' product.pk %}"><span>+ Добавить</span></a>
                       </div>
                     </div>
                   </div>
