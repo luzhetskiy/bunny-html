@@ -21483,8 +21483,8 @@ ol:not([class]) li:not([class]):before {
   color: transparent;
   background-color: #C7CED3;
   overflow: hidden;
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
 }
 
@@ -21492,8 +21492,8 @@ ol:not([class]) li:not([class]):before {
   color: transparent;
   background-color: #d51e28;
   overflow: hidden;
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
 }
 

@@ -530,7 +530,7 @@ function initSlickForPreview() {
 //cлайдер тизера товара
     $('.one-time').slick({
         dots: true,
-        infinite:false,
+        infinite:true,
         arrows:false,
         speed: 300,
         slidesToShow: 1,
