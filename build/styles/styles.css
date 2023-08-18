@@ -25388,7 +25388,7 @@ div[data-move=dropdownScroll] .mCSB_inside>.mCSB_container {
   /* line 16821, ../sass/css.scss */
   .new-card-type-catalog,
   .new-slider__card {
-    width: calc(100% / 6);
+    width: calc(100% / 4);
   }
 
   /* line 16824, ../sass/css.scss */
