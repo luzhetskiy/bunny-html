@@ -13,6 +13,132 @@ $(window).resize(function () {
         });
     }
 });
+//слайдер в статьях 
+$(document).ready(function () {
+    $('.related-products-slider').slick({
+        // autoplay: true,
+        swipe:false,
+        arrows: true,
+        dots:true,
+        prevArrow: $('.new-content__slider-prev'),
+        nextArrow: $('.new-content__slider-next'),
+        appendDots: $('.new-content__slider_new_dots'),
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 750,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+    })
+});
+
+//слайдер сертификатов
+$(document).ready(function () {
+    $('.new-promo__slider').slick({
+        swipe: false,
+        autoplay: true,
+        arrows: true,
+        dots: false,
+        prevArrow: $('.new-promo__slider-prev'),
+        nextArrow: $('.new-promo__slider-next'),
+    })
+});
+
+//cлайдер тизера товара
+
+$(document).ready(function () {
+    var width = $(document).width();
+    if (width > 979) {
+        (function ($) {
+            $.fn.HvrSlider = function () {
+                return this.each(function () {
+                    var el = $(this);
+                    if (el.find('picture').length > 1) {
+                        var hvr = $('<div>', {
+                            class: 'hvr',
+                            append: [
+                                $('<div>', {
+                                    class: 'hvr__images',
+                                    append: $('<div>', {
+                                        class: 'hvr__sectors',
+                                    }),
+                                }),
+                                $('<div>', {
+                                    class: 'hvr__dots',
+                                }),
+                            ],
+                            insertAfter: el,
+                            prepend: el,
+                        });
+                        var hvrImages = $('.hvr__images', hvr);
+                        var hvrImage = $('img', hvr);
+                        var hvrSectors = $('.hvr__sectors', hvr);
+                        var hvrDots = $('.hvr__dots', hvr);
+                        el.prependTo(hvrImages);
+                        hvrImage.each(function () {
+                            hvrSectors.prepend('<div class="hvr__sector"></div>');
+                            hvrDots.append('<div class="hvr__dot"></div>');
+                        });
+                        $('.hvr__dot:first', hvrDots).addClass('hvr__dot--active');
+                        var setActiveEl = function (el) {
+                            hvrImage.hide().eq(el.index()).show();
+                            $('.hvr__dot', hvrDots).removeClass('hvr__dot--active').eq(el.index()).addClass('hvr__dot--active');
+                        };
+                        $('.hvr__sector', hvrSectors).hover(function () {
+                            setActiveEl($(this));
+                        });
+                        hvrSectors.on('touchmove', function (e) {
+                            var position = e.originalEvent.changedTouches[0];
+                            var target = document.elementFromPoint(position.clientX, position.clientY);
+                            if ($(target).is('.hvr__sector')) {
+                                setActiveEl($(target));
+                            }
+                        });
+                    }
+                });
+            };
+        })(jQuery);
+        $('.one-time').HvrSlider();
+    }
+});
+$(document).ready(function () {
+    $(window).on("load resize", function () {
+        var width = $(document).width();
+        if (width > 979) {
+            $('.one-time').filter('.slick-initialized').slick('unslick');
+
+        } else {
+            $('.one-time').not('.slick-initialized').slick({
+                dots: true,
+                infinite: true,
+                arrows: false,
+                speed: 300,
+                slidesToShow: 1,
+            });
+        }
+    });
+});
 
 function headerTabs() {
     //Вкладки среднего меню, смена просмотра с по клику на по наведению и обратно при изменении разрешения экрана
@@ -103,6 +229,7 @@ $(document).ready(function () {
         $(this).parent().find('[data-action="tab"]').removeClass('new-tabs__link-action-open');
         $(this).addClass('new-tabs__link-action-open');
         $(this).parent().parent().find('[data-action="tabContent"]').removeClass('new-tabs__cell-action-open').eq($(this).index()).addClass('new-tabs__cell-action-open');
+        $('.one-time.slick-initialized').slick("setPosition");
     });
 
 
@@ -252,6 +379,8 @@ $(document).ready(function () {
     $('[data-action="adSliderInMain"]').slick({
         arrows: false,
         dots: true,
+
+
         mobileFirst: true,
         pauseOnHover: true,
         slidesToShow: 1,
@@ -527,14 +656,8 @@ function initSlickForPreview() {
         }]
     });
 }
-//cлайдер тизера товара
-    $('.one-time').slick({
-        dots: true,
-        infinite:true,
-        arrows:false,
-        speed: 300,
-        slidesToShow: 1,
-    });
+
+
 function initBuyButtons() {
     //Кнопка покупки
     // $('[data-action="buyButton"]').click(function() {

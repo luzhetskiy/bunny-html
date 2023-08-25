@@ -106,7 +106,8 @@ block content
                   .cart-table-col.col-center
                     span.cart-product-price 100 ₽
                   .cart-table-col.col-center
-                    input(class="submit" type='submit' value='+ Добавить')
+                    a(class="submit-package" href="{% url 'catalog:add_package_to_cart' product.pk %}")
+                      span + Добавить 
             .bonus-wrap
               form#discount_form(method='post' action='#discount_form')
                 input(type='hidden' name='csrfmiddlewaretoken' value='zZBe7F4kcq2oqJ2PZNQad97immNZSTjJ4dZ7om7Ba3zUJG2XfxtCsrFAWFustH5p')
