@@ -16,7 +16,7 @@ $(window).resize(function () {
 //слайдер в статьях 
 $(document).ready(function () {
     $('.related-products-slider').slick({
-        // autoplay: true,
+        autoplay: true,
         swipe:false,
         arrows: true,
         dots:true,
