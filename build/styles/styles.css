@@ -25437,10 +25437,6 @@ div[data-move=dropdownScroll] .mCSB_inside > .mCSB_container {
     margin-left: auto;
   }
   /* line 17317, ../sass/css.scss */
-  .new-tabs__shell  .new-card-type-catalog {
-    width: calc(100% / 6);
-  }
-
   .new-card-type-catalog {
     width: 25%;
   }
