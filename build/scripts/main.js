@@ -16,35 +16,35 @@ $(window).resize(function () {
 //слайдер в статьях 
 $(document).ready(function () {
     $('.related-products-slider').slick({
-        autoplay: true,
         swipe:false,
         arrows: true,
         dots:true,
+        infinite: false,
         prevArrow: $('.new-content__slider-prev'),
         nextArrow: $('.new-content__slider-next'),
         appendDots: $('.new-content__slider_new_dots'),
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
                 slidesToScroll: 1,
-                infinite: true,
                 dots: true
               }
             },
             {
               breakpoint: 750,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1
               }
             },
             {
               breakpoint: 480,
               settings: {
+                dots:false,
                 slidesToShow: 1,
                 slidesToScroll: 1
               }
@@ -57,7 +57,6 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.new-promo__slider').slick({
         swipe: false,
-        autoplay: true,
         arrows: true,
         dots: false,
         prevArrow: $('.new-promo__slider-prev'),
@@ -131,7 +130,7 @@ $(document).ready(function () {
         } else {
             $('.one-time').not('.slick-initialized').slick({
                 dots: true,
-                infinite: true,
+                infinite: false,
                 arrows: false,
                 speed: 300,
                 slidesToShow: 1,
