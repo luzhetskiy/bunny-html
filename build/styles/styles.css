@@ -20965,6 +20965,13 @@ ol:not([class]) li:not([class]):before {
     padding: 0 70px;
     margin-left: -30px;
   }
+  .related-products-slider .new-card.new-card-type-catalog.related-products__card .new-card__center {
+    overflow: visible;
+    max-height: max-content;
+  }
+  .related-products-slider .new-card.new-card-type-catalog.related-products__card:hover .new-card__explanation {
+    padding-top: 310px;
+  }
 }
 .col-xl-9-big .tabs__item {
   overflow: hidden;
@@ -20972,7 +20979,7 @@ ol:not([class]) li:not([class]):before {
 
 .related-products {
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 .related-products .related-products-slider {
   opacity: 0;
@@ -28331,6 +28338,9 @@ nav.menu .close {
   .new__title {
     margin-top: 10px;
   }
+  .new-promo.certificates .teaser__title {
+    text-align: center;
+  }
   /*  .post h1, .buy-sertificates-wrapper, .buy-sertificates-wrapper h3 {
     padding-right: 0;
     text-align: center !important;
@@ -30724,6 +30734,15 @@ textarea.input {
   .certificates-box {
     padding: 40px;
   }
+  .new-promo.certificates {
+    padding: 20px 60px;
+    width: 420px;
+    margin: auto;
+    position: relative;
+  }
+  .new-promo.certificates .new-promo__slide.slick-slide {
+    min-width: 300px;
+  }
 }
 @media (max-width: 767.98px) {
   /* line 20776, ../sass/css.scss */
@@ -30752,10 +30771,13 @@ textarea.input {
 }
 @media (max-width: 480px) {
   .article-related-products {
-    padding: 0px 40px;
-    width: 265px;
+    padding: 20px 55px;
+    width: 335px;
     margin: auto;
     position: relative;
+  }
+  .article-related-products .related-products-slide.slick-slide {
+    min-width: 225px;
   }
   .article-related-products .slick-arrow {
     position: absolute;
@@ -30770,6 +30792,35 @@ textarea.input {
   }
   .related-products-slider .new-card.new-card-type-catalog.related-products__card .new-card__bottom {
     justify-content: space-evenly;
+  }
+  .new-promo.certificates {
+    padding: 20px 55px;
+    width: 335px;
+    margin: auto;
+    position: relative;
+  }
+  .new-promo.certificates .new-promo__slide.slick-slide {
+    min-width: 225px;
+  }
+}
+@media (max-width: 380px) {
+  .article-related-products {
+    padding: 0px 55px;
+    width: 295px;
+    margin: auto;
+    position: relative;
+  }
+  .article-related-products .related-products-slide.slick-slide {
+    min-width: 185px;
+  }
+  .new-promo.certificates {
+    padding: 20px 55px;
+    width: 295px;
+    margin: auto;
+    position: relative;
+  }
+  .new-promo.certificates .new-promo__slide.slick-slide {
+    min-width: 185px;
   }
 }
 /* line 20790, ../sass/css.scss */

@@ -19,7 +19,7 @@ $(document).ready(function () {
         swipe:false,
         arrows: true,
         dots:true,
-        infinite: false,
+        infinite: true,
         prevArrow: $('.new-content__slider-prev'),
         nextArrow: $('.new-content__slider-next'),
         appendDots: $('.new-content__slider_new_dots'),
