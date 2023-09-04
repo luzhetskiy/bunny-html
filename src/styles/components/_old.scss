@@ -21798,13 +21798,14 @@ ol:not([class]) li:not([class]):before {
 @media (min-width: 1200px) {
   .col-xl-9-big {
     .tabs__item {
-      width: calc(100% + 30px);
+      width: calc(100% + 100px);
     }
   }
   .related-products-slider {
-    width: calc(100% + 35px);
-    padding: 0 70px;
-    margin-left: -30px;
+    padding: 0 50px;
+    .related-products-slide.slick-slide{
+      max-width: 212px !important;
+    }
     .new-card.new-card-type-catalog.related-products__card {
       .new-card__center {
         overflow: visible;
