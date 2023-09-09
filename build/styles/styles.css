@@ -20988,6 +20988,12 @@ ol:not([class]) li:not([class]):before {
   width: auto;
 }
 
+@media (max-width: 1024px) {
+  .columns-6 {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
 @media (max-width: 768px) {
   .columns-4 {
     display: grid !important;
@@ -20996,12 +21002,6 @@ ol:not([class]) li:not([class]):before {
   .columns-6 {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-@media (max-width: 1024px) {
-  .columns-6 {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
   }
 }
 @media (min-width: 1200px) {

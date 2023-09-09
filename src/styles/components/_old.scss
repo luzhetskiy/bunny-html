@@ -21811,37 +21811,36 @@ ol:not([class]) li:not([class]):before {
   .new-card.new-slider__card {
     width: auto;
   }
-  .new-card.new-card-type-catalog{
+  .new-card.new-card-type-catalog {
     width: auto;
   }
 }
-  .columns-6 {
+.columns-6 {
   display: grid !important;
   grid-template-columns: repeat(6, 1fr) !important;
   .new-card.new-slider__card {
     width: auto;
   }
-  .new-card.new-card-type-catalog{
-  width: auto;
+  .new-card.new-card-type-catalog {
+    width: auto;
+  }
 }
+
+@media (max-width: 1024px) {
+  .columns-6 {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
 }
 @media (max-width: 768px) {
   .columns-4 {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
-
-}
-.columns-6 {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-
-}
-}
-@media (max-width: 1024px) {
+  }
   .columns-6 {
     display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
-}
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
 @media (min-width: 1200px) {
   .col-xl-9-big {
