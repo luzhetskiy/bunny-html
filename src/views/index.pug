@@ -19,7 +19,7 @@ block content
           | Новинки
       .new-tabs__shell
         .new-tabs__cell.new-tabs__cell-type-middle.new-tabs__cell-action-open(data-action='tabContent')
-          .new-slider.new-tabs__slider(data-action='popularSlider')
+          .new-slider.new-tabs__slider.columns-6(data-action='popularSlider')
             .new-card.new-slider__card
               .new-card__labels
                 .new-card__label.new-card__label-type-important
@@ -100,21 +100,28 @@ block content
                 .new-card__label.new-card__label-type-important
                   svg.new-card__icon
                     use(xlink:href='#whiteStarIcon')
-              .new-card__top(title='Прeдпросмотр товара', data-action='fastBuyArea', data-preview-url='/catalog/product-preview/192596/')
+              .new-card__top(title='Прeдпросмотр товара', data-action='fastBuyArea', data-preview-url='/catalog/product-preview/219889/')
                 svg.new-phone__icon.new-phone__icon-type-loop
                   use(xlink:href='#loopIcon')
-                img.new-card__img(src='/media/cache/cc/09/cc09c28727f27c3a64c50fff1a178054.jpg', width='130', height='130', alt='Крем-пролонгатор Long Play - 15 мл.')
-              a.new-card__center(href='/catalog/product/long-play-15ml-prolongiruyuschaya-smazka-130038/', title='Перейти на страницу товара') Крем-пролонгатор Long Play - 15 мл.
+                .one-time
+                  picture 
+                    img.new-card__img(src='https://bunnylove.ru/media/cache/01/15/0115e6e60a742129f8815a67be873434.jpg' width='130' height='130' alt='CRYSTAL KEGEL EGGS')
+                  picture 
+                    img.new-card__img(src='https://bunnylove.ru//media/cache/97/8d/978d7294e3744537a6ff8f95c7aff4f8.jpg' width='130' height='130' alt='CRYSTAL KEGEL EGGS')
+                  picture 
+                    img.new-card__img(src='https://bunnylove.ru/media/cache/01/15/0115e6e60a742129f8815a67be873434.jpg' width='130' height='130' alt='CRYSTAL KEGEL EGGS')
+              a.new-card__center(href='/catalog/product/masturbator-svakom-ice-cream-egg-ssmc-02t/', title='Перейти на страницу товара') Мастурбатор Svakom Hedy Ice-cream Pink
               p.new-card__bottom(data-action='buyButtonShell')
                 span.new-card__priceBlock
                   span.new-card__price
-                    | 420
+                    | 690
                     span.new-card__currency ₽
-                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/192596/', data-action='buyButton')
+                button.new-button.new-card__button.new-button-type-round(data-url='/catalog/cart/add/219889/', data-action='buyButton')
                   svg.new-tabs__icon.new-tabs__icon-type-cart
                     use(xlink:href='#cartIcon')
                   |  Купить
-              p.new-card__explanation Мужской крем длительного действия для продления полового акта
+              p.new-card__explanation
+                | Компактный мастурбатор в форме яйца с двусторонним рельефом в виде спирали и крапин
             .new-card.new-slider__card
               .new-card__labels
                 .new-card__label.new-card__label-type-important

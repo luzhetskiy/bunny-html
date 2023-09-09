@@ -13,6 +13,8 @@ $(window).resize(function () {
         });
     }
 });
+
+
 //слайдер в статьях 
 $(document).ready(function () {
     $('.related-products-slider').slick({
@@ -64,7 +66,7 @@ $(document).ready(function () {
     })
 });
 
-//cлайдер тизера товара
+// тизер товара
 
 $(document).ready(function () {
     var width = $(document).width();

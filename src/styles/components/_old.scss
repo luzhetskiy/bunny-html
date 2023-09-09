@@ -21792,8 +21792,56 @@ ol:not([class]) li:not([class]):before {
     .one-time {
       visibility: visible;
       opacity: 1;
+      height: inherit;
     }
   }
+}
+.new-card_visible {
+  .new-card__center {
+    overflow: visible;
+    max-height: max-content;
+  }
+}
+.product-section__items-slider {
+  overflow: hidden;
+}
+.columns-4 {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  .new-card.new-slider__card {
+    width: auto;
+  }
+  .new-card.new-card-type-catalog{
+    width: auto;
+  }
+}
+  .columns-6 {
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr) !important;
+  .new-card.new-slider__card {
+    width: auto;
+  }
+  .new-card.new-card-type-catalog{
+  width: auto;
+}
+}
+@media (max-width: 768px) {
+  .columns-4 {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+
+}
+.columns-6 {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+
+}
+}
+@media (max-width: 1024px) {
+  .columns-6 {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+}
 }
 @media (min-width: 1200px) {
   .col-xl-9-big {
@@ -21803,7 +21851,7 @@ ol:not([class]) li:not([class]):before {
   }
   .related-products-slider {
     padding: 0 50px;
-    .related-products-slide.slick-slide{
+    .related-products-slide.slick-slide {
       max-width: 212px !important;
     }
     .new-card.new-card-type-catalog.related-products__card {
@@ -32344,12 +32392,12 @@ textarea.input {
   .certificates-box {
     padding: 40px;
   }
-  .new-promo.certificates{
+  .new-promo.certificates {
     padding: 20px 60px;
     width: 420px;
     margin: auto;
     position: relative;
-    .new-promo__slide.slick-slide{
+    .new-promo__slide.slick-slide {
       min-width: 300px;
     }
   }
@@ -32410,12 +32458,12 @@ textarea.input {
       }
     }
   }
-  .new-promo.certificates{
+  .new-promo.certificates {
     padding: 20px 55px;
     width: 335px;
     margin: auto;
     position: relative;
-    .new-promo__slide.slick-slide{
+    .new-promo__slide.slick-slide {
       min-width: 225px;
     }
   }
