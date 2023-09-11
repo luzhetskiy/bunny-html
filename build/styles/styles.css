@@ -21011,15 +21011,15 @@ ol:not([class]) li:not([class]):before {
   .related-products-slider {
     padding: 0 50px;
   }
-  .related-products-slider .related-products-slide.slick-slide {
-    max-width: 212px !important;
-  }
   .related-products-slider .new-card.new-card-type-catalog.related-products__card .new-card__center {
     overflow: visible;
     max-height: max-content;
   }
   .related-products-slider .new-card.new-card-type-catalog.related-products__card:hover .new-card__explanation {
     padding-top: 310px;
+  }
+  .tovar-related-products .related-products-slider {
+    padding: 0 40px;
   }
 }
 .col-xl-9-big .tabs__item {
@@ -21067,11 +21067,11 @@ ol:not([class]) li:not([class]):before {
   opacity: 1;
   pointer-events: auto;
 }
-.related-products-slider .related-products-slide.slick-slide.slick-cloned {
+.related-products-slider .related-products-slide.slick-slide.slick-current {
   opacity: 1;
   pointer-events: auto;
 }
-.related-products-slider .related-products-slide.slick-slide.slick-current {
+.related-products-slider .slick-slide[aria-hidden=true]:not([tabindex="-1"]) + .slick-cloned[aria-hidden=true] {
   opacity: 1;
   pointer-events: auto;
 }
