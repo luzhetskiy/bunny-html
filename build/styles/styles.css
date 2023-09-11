@@ -20971,10 +20971,10 @@ ol:not([class]) li:not([class]):before {
   grid-template-columns: repeat(4, 1fr) !important;
 }
 .columns-4 .new-card.new-slider__card {
-  width: auto;
+  min-width: 100%;
 }
 .columns-4 .new-card.new-card-type-catalog {
-  width: auto;
+  min-width: 100%;
 }
 
 .columns-6 {
@@ -20982,10 +20982,10 @@ ol:not([class]) li:not([class]):before {
   grid-template-columns: repeat(6, 1fr) !important;
 }
 .columns-6 .new-card.new-slider__card {
-  width: auto;
+  min-width: 100%;
 }
 .columns-6 .new-card.new-card-type-catalog {
-  width: auto;
+  min-width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -21064,6 +21064,14 @@ ol:not([class]) li:not([class]):before {
   transition: opacity 500ms;
 }
 .related-products-slider .related-products-slide.slick-slide.slick-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.related-products-slider .related-products-slide.slick-slide.slick-cloned {
+  opacity: 1;
+  pointer-events: auto;
+}
+.related-products-slider .related-products-slide.slick-slide.slick-current {
   opacity: 1;
   pointer-events: auto;
 }
