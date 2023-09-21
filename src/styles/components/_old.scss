@@ -21986,8 +21986,11 @@ ol:not([class]) li:not([class]):before {
   column-gap: 20px;
   justify-content: center;
   .new-content__slider_new_dots {
-    .slick-dots {
+    .slick-dots{
       display: none;
+    }
+    .slick-dots:first-child {
+      display: flex;
       flex-direction: row;
       column-gap: 15px;
       align-items: center;

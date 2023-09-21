@@ -21140,6 +21140,9 @@ ol:not([class]) li:not([class]):before {
 }
 .related-products-slide__pagination .new-content__slider_new_dots .slick-dots {
   display: none;
+}
+.related-products-slide__pagination .new-content__slider_new_dots .slick-dots:first-child {
+  display: flex;
   flex-direction: row;
   column-gap: 15px;
   align-items: center;
