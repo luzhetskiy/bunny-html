@@ -32192,6 +32192,10 @@ section.ticket .ticket-info .cod-qr {
   width: 100%;
   height: 100%;
 }
+section.ticket .ticket-info .cod-qr img {
+  width: 100%;
+  height: 100%;
+}
 
 @media (max-width: 630px) {
   section.ticket .ticket-image {
