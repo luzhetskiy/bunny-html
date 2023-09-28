@@ -1,0 +1,30 @@
+extends layout/layout
+block variables
+block content
+    main 
+        section.ticket
+            .container 
+                .ticket-image
+                    img(src='../img/ticket-bg.jpg')
+                .ticket-info
+                    a(href="/#").ticket-header-logo 
+                        img(src=href+"/img/bunny_logo.svg" alt="logo").ticket-header-logo__image
+                    .ticket-title Билет
+                    .ticket-text "Девичник с сомелье
+                        br 
+                        |и дегустацией романтичных вин"
+                    .ticket-time-block
+                        .ticket-date 1 января 2023 года 
+                        .ticlet-time в 18:00
+                    .ticket-adress г.Самара, Московское ш. Лит.В
+                    .ticket-cods
+                        .cod-item 
+                            .cod-title Подробнее о мероприятии:
+                            .cod-image
+                                .cod-bg 
+                                .cod-qr 
+                        .cod-item 
+                            .cod-title Связаться с нами:
+                            .cod-image
+                                .cod-qr 
+
