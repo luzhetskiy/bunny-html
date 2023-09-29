@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "SF-Pro-Rounded";
+  src: url(../fonts/SF-Pro-Rounded-Black.woff2) format("woff2");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "SF-Pro-Rounded";
+  src: url(../fonts/SF-Pro-Rounded-Heavy.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SF-Pro-Rounded";
+  src: url(../fonts/SF-Pro-Rounded-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SF-Pro-Rounded";
+  src: url(../fonts/SF-Pro-Rounded-Semibold.woff2) format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "SF-Pro-Rounded";
+  src: url(../fonts/SF-Pro-Rounded-Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF-Pro-Rounded";
+  src: url(../fonts/SF-Pro-Rounded-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SF-Pro-Rounded";
+  src: url(../fonts/SF-Pro-Rounded-Light.woff2) format("woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "SF-Pro-Rounded";
+  src: url(../fonts/SF-Pro-Rounded-Ultralight.woff2) format("woff2");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "SF-Pro-Rounded";
+  src: url(../fonts/SF-Pro-Rounded-Thin.woff2) format("woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Stolzi";
+  src: url(../fonts/Stolzi-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Stolzi";
+  src: url(../fonts/Stolzi-Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Stolzi";
+  src: url(../fonts/Stolzi-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Stolzi";
+  src: url(../fonts/Stolzi-Book.woff2) format("woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Stolzi";
+  src: url(../fonts/Stolzi-Light.woff2) format("woff2");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Stolzi";
+  src: url(../fonts/Stolzi-Thin.woff2) format("woff2");
+  font-weight: 100;
+}
+section.ticket .container {
+  max-width: 630px;
+}
+section.ticket .ticket-image {
+  width: 600px;
+}
+section.ticket .ticket-image img {
+  width: 100%;
+  height: auto;
+}
+section.ticket .ticket-info {
+  padding: 40px 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  row-gap: 40px;
+}
+section.ticket .ticket-info .ticket-header-logo {
+  margin-right: 0;
+  width: 330px;
+}
+section.ticket .ticket-info .ticket-header-logo img {
+  margin-bottom: 55px;
+}
+section.ticket .ticket-info .ticket-title {
+  font-family: "SF-Pro-Rounded", sans-serif;
+  font-size: 74.5px;
+  font-weight: 300;
+  color: #e1101a;
+  letter-spacing: 25px;
+  text-transform: uppercase;
+  width: 325px;
+}
+section.ticket .ticket-info .ticket-text {
+  font-family: "Stolzi";
+  font-weight: 300;
+  font-size: 18px;
+}
+section.ticket .ticket-info .ticket-time-block {
+  width: 320px;
+  height: 75px;
+  border: solid 2px #e1101a;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.ticket .ticket-info .ticket-date {
+  color: #000;
+  font-family: "Stolzi";
+  font-weight: 400;
+  font-size: 23px;
+}
+section.ticket .ticket-info .ticlet-time {
+  color: #e1101a;
+  font-family: "Stolzi";
+  font-weight: 400;
+  font-size: 23px;
+}
+section.ticket .ticket-info .ticket-adress {
+  color: #000;
+  font-family: "Stolzi";
+  font-weight: 300;
+  font-size: 18px;
+}
+section.ticket .ticket-info .ticket-cods {
+  color: #000;
+  font-family: "Stolzi";
+  font-weight: 400;
+  font-size: 9px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  column-gap: 15px;
+}
+section.ticket .ticket-info .cod-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+}
+section.ticket .ticket-info .cod-image {
+  background-color: #e1101a;
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  padding: 7px;
+}
+section.ticket .ticket-info .cod-title {
+  color: #000;
+  font-family: "Stolzi";
+  font-weight: 400;
+  width: 75px;
+}
+section.ticket .ticket-info .cod-qr {
+  width: 100%;
+  height: 100%;
+}
+section.ticket .ticket-info .cod-qr img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 630px) {
+  section.ticket .ticket-image {
+    width: 100%;
+    height: auto;
+  }
+  section.ticket .ticket-info {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 420px) {
+  section.ticket .ticket-image {
+    width: 100%;
+    height: auto;
+  }
+  section.ticket .ticket-info {
+    padding: 40px 20px;
+  }
+  section.ticket .ticket-info .ticket-header-logo {
+    margin-right: 0;
+    width: 230px;
+  }
+  section.ticket .ticket-info .ticket-title {
+    font-family: "SF-Pro-Rounded", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    color: #e1101a;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    width: auto;
+    padding-left: 15px;
+  }
+  section.ticket .ticket-info .ticket-time-block {
+    width: 240px;
+    height: 75px;
+    border: solid 2px #e1101a;
+    border-radius: 80px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.ticket .ticket-info .ticket-date {
+    color: #000;
+    font-family: "Stolzi";
+    font-weight: 400;
+    font-size: 18px;
+  }
+  section.ticket .ticket-info .ticlet-time {
+    color: #e1101a;
+    font-family: "Stolzi";
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=maps/ticket.css.map */
