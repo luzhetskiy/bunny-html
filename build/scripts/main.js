@@ -16,46 +16,101 @@ $(window).resize(function () {
 
 
 //слайдер в статьях 
-$(document).ready(function () {
-    $('.related-products-slider').slick({
-        swipe:false,
-        arrows: true,
-        dots:true,
-        infinite: true,
-        prevArrow: $('.new-content__slider-prev'),
-        nextArrow: $('.new-content__slider-next'),
-        appendDots: $('.new-content__slider_new_dots'),
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 750,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                dots:false,
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-        ]
-    })
+var arrowprevNodes = $('.new-content__slider-prev')
+var arrownextNodes = $('.new-content__slider-next')
+var dotsNodes = $('.new-content__slider_new_dots')
+$('.related-products-slider').each(function(i, node) {
+	var listNodeUniqueClass = 'related-products-slider-' + i
+	$(node).addClass(listNodeUniqueClass)
+    var arrowprevNodeUniqueClass = 'new-content__slider-prev-' + i
+    arrowprevNodes.eq(i).addClass(arrowprevNodeUniqueClass)
+    var arrownextNodeUniqueClass = 'new-content__slider-next-' + i
+    arrownextNodes.eq(i).addClass(arrownextNodeUniqueClass)
+    var dotsnextNodeUniqueClass = 'new-content__slider_new_dots-' + i
+    dotsNodes.eq(i).addClass(dotsnextNodeUniqueClass)
+	var listSelector = '.' + listNodeUniqueClass
+    var arrowprevSelector = '.' + arrowprevNodeUniqueClass
+    var arrownextSelector = '.' + arrownextNodeUniqueClass
+    var dotsSelector = '.' + dotsnextNodeUniqueClass
 
-});
+    $(listSelector).slick({
+            swipe:false,
+            arrows: true,
+            dots:true,
+            infinite: true,
+            prevArrow: $(arrowprevSelector),
+            nextArrow: $(arrownextSelector),
+            appendDots: $(dotsSelector),
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 750,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    dots:false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+            ]
+        });
+    });
+// $(document).ready(function () {
+//     $('.related-products-slider').slick({
+//         swipe:false,
+//         arrows: true,
+//         dots:true,
+//         infinite: true,
+//         prevArrow: $('.new-content__slider-prev'),
+//         nextArrow: $('.new-content__slider-next'),
+//         appendDots: $('.new-content__slider_new_dots'),
+//         slidesToShow: 4,
+//         slidesToScroll: 1,
+//         responsive: [
+//             {
+//               breakpoint: 1024,
+//               settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 dots: true
+//               }
+//             },
+//             {
+//               breakpoint: 750,
+//               settings: {
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//                 dots: true
+//               }
+//             },
+//             {
+//               breakpoint: 480,
+//               settings: {
+//                 dots:false,
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1
+//               }
+//             }
+//         ]
+//     })
+
+// });
 
 //слайдер сертификатов
 $(document).ready(function () {
