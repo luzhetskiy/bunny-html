@@ -52,6 +52,12 @@ $('.related-products-slider').each(function(i, node) {
                     dots: true
                   }
                 },
+                                {
+                  breakpoint: 979,
+                  settings: {
+                    swipe:true
+                  }
+                },
                 {
                   breakpoint: 750,
                   settings: {
