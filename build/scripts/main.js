@@ -1,19 +1,16 @@
 $(window).resize(function () {
-    var cityButton = $('[data-action="cityButton"]');
-    if (cityButton) {
-        //Всплывающее окно "Ваш город?", сбор расстояния до блока
-        toCityButton = cityButton.offset().left;
-        toDesktopCityButton = $('[data-action="desktopCityButton"]').offset().left;
-        windowWidth = $(window).width();
-        if (windowWidth < 1025) {
-            $('[data-action="cityChoice"]').css({
-                'left': toCityButton + 'px'
-            });
-        } else {
-            $('[data-action="cityChoice"]').css({
-                'left': toDesktopCityButton + 'px'
-            });
-        }
+    //Всплывающее окно "Ваш город?", сбор расстояния до блока
+    toCityButton = $('[data-action="cityButton"]').offset().left;
+    toDesktopCityButton = $('[data-action="desktopCityButton"]').offset().left;
+    windowWidth = $(window).width();
+    if (windowWidth < 1025) {
+        $('[data-action="cityChoice"]').css({
+            'left': toCityButton + 'px'
+        });
+    } else {
+        $('[data-action="cityChoice"]').css({
+            'left': toDesktopCityButton + 'px'
+        });
     }
 });
 
@@ -22,104 +19,64 @@ $(window).resize(function () {
 var arrowprevNodes = $('.new-content__slider-prev')
 var arrownextNodes = $('.new-content__slider-next')
 var dotsNodes = $('.new-content__slider_new_dots')
-$('.related-products-slider').each(function(i, node) {
-	var listNodeUniqueClass = 'related-products-slider-' + i
-	$(node).addClass(listNodeUniqueClass)
+$('.related-products-slider').each(function (i, node) {
+    var listNodeUniqueClass = 'related-products-slider-' + i
+    $(node).addClass(listNodeUniqueClass)
     var arrowprevNodeUniqueClass = 'new-content__slider-prev-' + i
     arrowprevNodes.eq(i).addClass(arrowprevNodeUniqueClass)
     var arrownextNodeUniqueClass = 'new-content__slider-next-' + i
     arrownextNodes.eq(i).addClass(arrownextNodeUniqueClass)
     var dotsnextNodeUniqueClass = 'new-content__slider_new_dots-' + i
     dotsNodes.eq(i).addClass(dotsnextNodeUniqueClass)
-	var listSelector = '.' + listNodeUniqueClass
+    var listSelector = '.' + listNodeUniqueClass
     var arrowprevSelector = '.' + arrowprevNodeUniqueClass
     var arrownextSelector = '.' + arrownextNodeUniqueClass
     var dotsSelector = '.' + dotsnextNodeUniqueClass
 
     $(listSelector).slick({
-            swipe:false,
-            arrows: true,
-            dots:true,
-            infinite: true,
-            prevArrow: $(arrowprevSelector),
-            nextArrow: $(arrownextSelector),
-            appendDots: $(dotsSelector),
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                  breakpoint: 1024,
-                  settings: {
+        swipe: false,
+        arrows: true,
+        dots: true,
+        infinite: true,
+        prevArrow: $(arrowprevSelector),
+        nextArrow: $(arrownextSelector),
+        appendDots: $(dotsSelector),
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     dots: true
-                  }
-                },
-                                {
-                  breakpoint: 979,
-                  settings: {
-                    swipe:true
-                  }
-                },
-                {
-                  breakpoint: 750,
-                  settings: {
+                }
+            },
+            {
+                breakpoint: 979,
+                settings: {
+                    swipe: true
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     dots: true
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    dots:false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    dots: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
-                  }
                 }
-            ]
-        });
+            }
+        ]
     });
-// $(document).ready(function () {
-//     $('.related-products-slider').slick({
-//         swipe:false,
-//         arrows: true,
-//         dots:true,
-//         infinite: true,
-//         prevArrow: $('.new-content__slider-prev'),
-//         nextArrow: $('.new-content__slider-next'),
-//         appendDots: $('.new-content__slider_new_dots'),
-//         slidesToShow: 4,
-//         slidesToScroll: 1,
-//         responsive: [
-//             {
-//               breakpoint: 1024,
-//               settings: {
-//                 slidesToShow: 3,
-//                 slidesToScroll: 1,
-//                 dots: true
-//               }
-//             },
-//             {
-//               breakpoint: 750,
-//               settings: {
-//                 slidesToShow: 2,
-//                 slidesToScroll: 1,
-//                 dots: true
-//               }
-//             },
-//             {
-//               breakpoint: 480,
-//               settings: {
-//                 dots:false,
-//                 slidesToShow: 1,
-//                 slidesToScroll: 1
-//               }
-//             }
-//         ]
-//     })
-
-// });
+});
 
 //слайдер сертификатов
 $(document).ready(function () {
@@ -202,11 +159,24 @@ $(document).ready(function () {
                 arrows: false,
                 speed: 300,
                 slidesToShow: 1,
-            });
+            })
         }
     });
 });
-
+$('.related-products-slider').each(function () {
+    var $wrapperSlider = $(this),
+        wrapperSlider = $wrapperSlider[0];
+        $wrapperSlider.find('.one-time').on('touchstart', function () {
+        wrapperSlider.slick.setOption({
+            swipe: false
+        })
+    })
+    $wrapperSlider.find('.one-time').on('touchend', function ()  {
+            wrapperSlider.slick.setOption({
+                swipe: true
+            })
+        });
+});
 function headerTabs() {
     //Вкладки среднего меню, смена просмотра с по клику на по наведению и обратно при изменении разрешения экрана
     if ($(window).width() < 1200) {
