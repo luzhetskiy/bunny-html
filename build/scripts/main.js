@@ -98,20 +98,7 @@ $(document).ready(function () {
         ]
     })
 });
-$('.new-promo__slider').each(function () {
-    var $promorSlider = $(this),
-        promoSlider = $promoSlider[0];
-        $promorSlider.find('.one-time').on('touchstart', function () {
-        promoSlider.slick.setOption({
-            swipe: false
-        })
-    })
-    $promoSlider.find('.one-time').on('touchend', function ()  {
-            promoSlider.slick.setOption({
-                swipe: true
-            })
-        });
-});
+
 // тизер товара
 
 $(document).ready(function () {
@@ -196,6 +183,20 @@ $('.related-products-slider').each(function () {
     })
     $wrapperSlider.find('.one-time').on('touchend', function ()  {
             wrapperSlider.slick.setOption({
+                swipe: true
+            })
+        });
+});
+$('.new-promo__slider').each(function () {
+    var $promoSlider = $(this),
+        promoSlider = $promoSlider[0];
+        $promoSlider.find('.one-time').on('touchstart', function () {
+        promoSlider.slick.setOption({
+            swipe: false
+        })
+    })
+    $promoSlider.find('.one-time').on('touchend', function ()  {
+            promoSlider.slick.setOption({
                 swipe: true
             })
         });
