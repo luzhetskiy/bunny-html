@@ -22147,8 +22147,7 @@ ol:not([class]) li:not([class]):before {
 /* line 14256, ../sass/css.scss */
 .new-card__labels {
   z-index: 10 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+  transition: opacity 0ms !important;
   display: flex;
   position: absolute;
   top: 16px;
