@@ -61,6 +61,7 @@ $('.related-products-slider').each(function (i, node) {
             {
                 breakpoint: 750,
                 settings: {
+                    swipe: true,
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     dots: true
@@ -69,6 +70,7 @@ $('.related-products-slider').each(function (i, node) {
             {
                 breakpoint: 480,
                 settings: {
+                    swipe: true,
                     dots: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
