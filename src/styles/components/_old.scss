@@ -22146,13 +22146,12 @@ ol:not([class]) li:not([class]):before {
 
 /* line 14256, ../sass/css.scss */
 .new-card__labels {
-  z-index: 10 !important;
-  transition: opacity 0ms !important;
   display: flex;
   position: absolute;
   top: 16px;
   left: 15px;
   flex-direction: column;
+  z-index: 10 !important;
 }
 
 /* line 14263, ../sass/css.scss */

@@ -88,9 +88,30 @@ $(document).ready(function () {
         dots: false,
         prevArrow: $('.new-promo__slider-prev'),
         nextArrow: $('.new-promo__slider-next'),
+        responsive: [
+            {
+                breakpoint: 979,
+                settings: {
+                    swipe:true
+                }
+            }
+        ]
     })
 });
-
+$('.new-promo__slider').each(function () {
+    var $promorSlider = $(this),
+        promoSlider = $promoSlider[0];
+        $promorSlider.find('.one-time').on('touchstart', function () {
+        promoSlider.slick.setOption({
+            swipe: false
+        })
+    })
+    $promoSlider.find('.one-time').on('touchend', function ()  {
+            promoSlider.slick.setOption({
+                swipe: true
+            })
+        });
+});
 // тизер товара
 
 $(document).ready(function () {
