@@ -21290,7 +21290,7 @@ ol:not([class]) li:not([class]):before {
 
 /* line 14256, ../sass/css.scss */
 .new-card__labels {
-  z-index: 10;
+  z-index: 10 !important;
   display: flex;
   position: absolute;
   top: 16px;
