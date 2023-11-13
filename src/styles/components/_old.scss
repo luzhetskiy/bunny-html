@@ -21128,7 +21128,15 @@ ol:not([class]) li:not([class]):before {
 .new-header__bottom {
   order: 5;
 }
-
+.new-header__bottom.fixed{
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #f7f7f7;
+  margin-top: 0px;
+}
 /* line 13754, ../sass/css.scss */
 .new-header__top {
   display: none;

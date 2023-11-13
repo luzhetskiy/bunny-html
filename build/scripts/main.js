@@ -1,3 +1,11 @@
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 166) {
+        $('.new-header__bottom').addClass('fixed');
+    } else {
+        $('.new-header__bottom').removeClass('fixed');
+    }
+});
+
 $(window).resize(function () {
     //Всплывающее окно "Ваш город?", сбор расстояния до блока
     toCityButton = $('[data-action="cityButton"]').offset().left;
