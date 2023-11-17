@@ -27946,6 +27946,7 @@ div[data-move="dropdownScroll"] .mCSB_inside > .mCSB_container {
   .new-tabs__linkShell:hover .new-tabs__cell-type-alternative {
     z-index: 11;
     opacity: 1;
+    display: flex;
   }
 
   /* line 17887, ../sass/css.scss */
@@ -27981,6 +27982,7 @@ div[data-move="dropdownScroll"] .mCSB_inside > .mCSB_container {
     position: absolute;
     z-index: -1;
     opacity: 0;
+    display: none;
   }
 
   /* line 17907, ../sass/css.scss */

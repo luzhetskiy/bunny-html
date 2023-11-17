@@ -1,11 +1,11 @@
 $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 166) {
+    windowWidth = $(window).width();
+    if (($(window).scrollTop() > 166) && (windowWidth > 1023)) {
         $('.new-header__bottom').addClass('fixed');
     } else {
         $('.new-header__bottom').removeClass('fixed');
     }
 });
-
 $(window).resize(function () {
     //Всплывающее окно "Ваш город?", сбор расстояния до блока
     toCityButton = $('[data-action="cityButton"]').offset().left;
@@ -100,7 +100,7 @@ $(document).ready(function () {
             {
                 breakpoint: 979,
                 settings: {
-                    swipe:true
+                    swipe: true
                 }
             }
         ]
@@ -184,30 +184,30 @@ $(document).ready(function () {
 $('.related-products-slider').each(function () {
     var $wrapperSlider = $(this),
         wrapperSlider = $wrapperSlider[0];
-        $wrapperSlider.find('.one-time').on('touchstart', function () {
+    $wrapperSlider.find('.one-time').on('touchstart', function () {
         wrapperSlider.slick.setOption({
             swipe: false
         })
     })
-    $wrapperSlider.find('.one-time').on('touchend', function ()  {
-            wrapperSlider.slick.setOption({
-                swipe: true
-            })
-        });
+    $wrapperSlider.find('.one-time').on('touchend', function () {
+        wrapperSlider.slick.setOption({
+            swipe: true
+        })
+    });
 });
 $('.new-promo__slider').each(function () {
     var $promoSlider = $(this),
         promoSlider = $promoSlider[0];
-        $promoSlider.find('.one-time').on('touchstart', function () {
+    $promoSlider.find('.one-time').on('touchstart', function () {
         promoSlider.slick.setOption({
             swipe: false
         })
     })
-    $promoSlider.find('.one-time').on('touchend', function ()  {
-            promoSlider.slick.setOption({
-                swipe: true
-            })
-        });
+    $promoSlider.find('.one-time').on('touchend', function () {
+        promoSlider.slick.setOption({
+            swipe: true
+        })
+    });
 });
 function headerTabs() {
     //Вкладки среднего меню, смена просмотра с по клику на по наведению и обратно при изменении разрешения экрана
