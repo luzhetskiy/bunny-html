@@ -8,17 +8,24 @@ $(window).bind('scroll', function () {
 });
 $(window).resize(function () {
     //Всплывающее окно "Ваш город?", сбор расстояния до блока
-    toCityButton = $('[data-action="cityButton"]').offset().left;
-    toDesktopCityButton = $('[data-action="desktopCityButton"]').offset().left;
-    windowWidth = $(window).width();
-    if (windowWidth < 1025) {
-        $('[data-action="cityChoice"]').css({
-            'left': toCityButton + 'px'
-        });
-    } else {
-        $('[data-action="cityChoice"]').css({
-            'left': toDesktopCityButton + 'px'
-        });
+    var cityButton = $('[data-action="cityButton"]');
+    var desktopCityButton = $('[data-action="desktopCityButton"]');
+    var cityChoice = $('[data-action="cityChoice"]');
+    
+    if (cityButton.length && desktopCityButton.length) {
+        var toCityButton = cityButton.offset().left;
+        var toDesktopCityButton = desktopCityButton.offset().left;
+        var windowWidth = $(window).width();
+        
+        if (windowWidth < 1025) {
+            cityChoice.css({
+                'left': toCityButton + 'px'
+            });
+        } else {
+            cityChoice.css({
+                'left': toDesktopCityButton + 'px'
+            });
+        }
     }
 });
 
