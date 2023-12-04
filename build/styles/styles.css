@@ -13672,7 +13672,8 @@ body {
 
 /* line 8946, ../sass/css.scss */
 .bonus-wrap form .bonus-form input[type=text] {
-  width: calc(100% - 125px);
+  width: 70%;
+  margin: auto;
 }
 
 /* line 8949, ../sass/css.scss */
